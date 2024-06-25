@@ -1,4 +1,7 @@
 import React from 'react';
+import { useEffect } from 'react';
+import WOW from 'wowjs';
+
 import AnimatedButton from './layouts/AnimateButton';
 import BannerSlider from './animation/BannerSlider';
 import TestimonialSlider from './animation/TestimonialSlider';
@@ -8,6 +11,13 @@ import Program from './section/Program';
 
 
  function Home(){
+    useEffect(() => {
+        // Initialize WOW.js
+        new WOW.WOW({
+          live: false
+        }).init();
+      }, []);
+    
     return(
     <>
            {/* <!-- Sidebar area start here --> */}

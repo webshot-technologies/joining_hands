@@ -2,8 +2,8 @@
 import { BrowserRouter as Router, Switch, Route, Link, Routes } from 'react-router-dom';
 import Header from './components/layouts/Header';
 import Footer from './components/layouts/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
