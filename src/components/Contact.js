@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
  function Contact(){
     return(
         <>
-    <div id="targetElement" className="sidebar-area sidebar__hide">
+    {/* <div id="targetElement" className="sidebar-area sidebar__hide">
         <div className="sidebar__overlay"></div>
         <a href="index.html" className="logo mb-40">
             <img src="images/logo/logo-light.svg" alt="logo"/>
@@ -25,7 +26,7 @@ import React from 'react';
             <a href="#0"><i className="fa-brands fa-pinterest-p"></i></a>
         </div>
         <button id="closeButton" className="text-white"><i className="fa-solid fa-xmark"></i></button>
-    </div>
+    </div> */}
     <main>
         {/* <!-- Page banner area start here --> */}
         <section className="banner__inner-page bg-image pt-160 pb-160 bg-image" style={{backgroundImage: "url('images/banner/banner-inner-page.jpg')"}}
@@ -33,7 +34,7 @@ import React from 'react';
             <div className="container">
                 <h2 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Contact</h2>
                 <div className="breadcrumb-list wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <a href="index.html">Home</a><span><i className="fa-regular fa-angles-right mx-2"></i>Contact</span>
+                    <Link to={'/'}>Home</Link><span><i className="fa-regular fa-angles-right mx-2"></i>Contact</span>
                 </div>
             </div>
         </section>
@@ -58,8 +59,7 @@ import React from 'react';
                                         strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <h5 className="fs-16 mt-20"><a href="#0">House #5, Street Number #98, brasilia- 70000-000,
-                                    Brazil.</a></h5>
+                            <h5 className="fs-16 mt-20"><a href="#0">A-38, 1st floor, Lajpat Nagar IV, Block A, Amar Colony, Lajpat Nagar, New Delhi 110024</a></h5>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
@@ -75,8 +75,7 @@ import React from 'react';
                                         strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <h5 className="fs-16 mt-20"><a href="#0">support@example.com</a></h5>
-                            <h5 className="fs-16"><a href="#0">contact@example.com</a></h5>
+                            <h5 className="fs-16"><a href="#0">info@joininghandsindia.org</a></h5>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
@@ -90,8 +89,7 @@ import React from 'react';
                                         fill="white" />
                                 </svg>
                             </div>
-                            <h5 className="fs-16 mt-20"><a href="tel:+20866660112">+208-6666-0112</a></h5>
-                            <h5 className="fs-16"><a href="tel:+380961381877">+380961381877</a></h5>
+                            <h5 className="fs-16"><a href="tel:+91 11 46562485">+91 11 46562485</a></h5>
                         </div>
                     </div>
                 </div>
@@ -126,16 +124,9 @@ import React from 'react';
                                         <input id="email" type="email" placeholder="Your Email"/>
                                     </div>
                                 </div>
-                                <label For="subject">Subject*</label>
-                                <select name="#" id="subject">
-                                    <option value="0">UI/UX Design</option>
-                                    <option value="1">Web Developer</option>
-                                    <option value="2">Marketing Manager</option>
-                                    <option value="3">Electrical Engineer</option>
-                                    <option value="4">Web Designer</option>
-                                </select>
+                               
                                 <div className="text-area">
-                                    <label htmlFor="massage">Your Review*</label>
+                                    <label htmlFor="massage">Massage*</label>
                                     <textarea id="massage" placeholder="Write Message"></textarea>
                                 </div>
                                 <div className="btn-two">

@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
+import AnimateButton from './AnimateButton';
 import { Link } from 'react-router-dom';
 
 // import '../../styles/style.css';
@@ -40,7 +41,7 @@ function Header(){
                             </defs>
                         </svg>
 
-                        <a href="#0" className="ms-1">+208-6666-0112</a>
+                        <a href="#0" className="ms-1 ">+208-6666-0112</a>
                     </li>
                 </ul>
                 <ul className="link-info">
@@ -58,10 +59,9 @@ function Header(){
                 <Link to={'/'} className="logo">
                     <img src="/images/logo/logo.png" alt="logo"/>
                 </Link>
-
                 <Menu/>
 
-                <div className="btn-two d-none d-lg-inline-block">
+                {/* <div className="btn-two d-none d-lg-inline-block ">
                     <span className=" btn-circle">
                     </span>
                     <a href="cause-single.html" className="btn-inner">
@@ -69,7 +69,8 @@ function Header(){
                             DONATE NOW
                         </span>
                     </a>
-                </div>
+                </div> */}
+                <AnimateButton/>
                 <div className="bars d-block d-lg-none">
                     <i id="openButton" className="fa-solid fa-bars"></i>
                 </div>

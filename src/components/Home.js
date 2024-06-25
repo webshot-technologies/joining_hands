@@ -1,4 +1,9 @@
 import React from 'react';
+import AnimatedButton from './layouts/AnimateButton';
+import BannerSlider from './animation/BannerSlider';
+import TestimonialSlider from './animation/TestimonialSlider';
+import BrandSlider from './animation/BrandSlider';
+import Program from './section/Program';
 
 
 
@@ -32,105 +37,11 @@ import React from 'react';
 
     <main>
         {/* <!-- Banner area start here --> */}
-        <section className="banner-two-area">
-            <div className="swiper banner-two__slider">
-                <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                        <div className="slide-bg" style={{ backgroundImage: "url('/images/banner/banner-image2.jpg')"}}  data-background="assets/images/banner/banner-image1.jpg"></div>
-                        <div className="container">
-                            <div className="banner-two__content">
-                                <h4 data-animation="fadeInUp" data-delay=".3s">Change The World Together</h4>
-                                <h1 data-animation="fadeInUp" data-delay=".5s">Support Kids & Elders <br/> Give
-                                    Generously</h1>
-                                <div className="btn-one mt-50" data-animation="fadeInUp" data-delay="1s">
-                                    <span className="btn-circle">
-                                    </span>
-                                    <a href="cause-single.html" className="btn-inner">
-                                        <span className="btn-text">
-                                            DONATE NOW
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div className="slide-bg" style={{ backgroundImage: "url('/images/banner/banner-image2.jpg')"}}  ></div>
-                        <div className="container">
-                            <div className="banner-two__content">
-                                <h4 data-animation="fadeInUp" data-delay=".3s">Change The World Together</h4>
-                                <h1 data-animation="fadeInUp" data-delay=".5s">Support Kids & Elders <br/> Give
-                                    Generously</h1>
-                                <div className="btn-one mt-50" data-animation="fadeInUp" data-delay="1s">
-                                    <span className="btn-circle">
-                                    </span>
-                                    <a href="cause-single.html" className="btn-inner">
-                                        <span className="btn-text">
-                                            DONATE NOW
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="banner-two__arry-btn">
-                <button className="arry-prev mb-15 banner-two__arry-prev active"><i
-                        className="fa-light fa-chevron-left"></i></button>
-                <button className="arry-next banner-two__arry-next"><i className="fa-light fa-chevron-right"></i></button>
-            </div>
-            <ul className="banner-two__social">
-                <li>
-                    <a href="#0"><i className="fa-brands fa-facebook-f"></i></a>
-                </li>
-                <li>
-                    <a href="#0" className="active"><i className="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="#0"><i className="fa-brands fa-linkedin-in"></i></a>
-                </li>
-            </ul>
-            <div className="banner-two__shape wow slideInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                <img className="banner__line__animation" src="images/shape/banner-line.png" alt="shape"/>
-            </div>
-        </section>
-        {/* <!-- Banner area end here -->/ */}
+        <BannerSlider/>
 
+        {/* <!-- Banner area end here -->/ */}
         {/* <!-- Service area start here --> */}
-        <section className="service-area pt-100 pb-100 sub-bg">
-            <div className="container">
-                <div className="row g-4">
-                    <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <div className="service__item">
-                            <div className="service__icon"><img src="images/icon/service1.png" alt="icon"/></div>
-                            <div className="service__content">
-                                <h3 className="text-white">Kids Education</h3>
-                                <p className="text-white">Every is to be welcomed in certain circumstances</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div className="service__item active">
-                            <div className="service__icon"><img src="images/icon/service2.png" alt="icon"/></div>
-                            <div className="service__content">
-                                <h3 className="text-white">Healthy Food</h3>
-                                <p className="text-white">Every is to be welcomed in certain circumstances</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <div className="service__item">
-                            <div className="service__icon"><img src="images/icon/service3.png" alt="icon"/></div>
-                            <div className="service__content">
-                                <h3 className="text-white">Medical Help</h3>
-                                <p className="text-white">Every is to be welcomed in certain circumstances</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <Program/>
         {/* <!-- Service area end here --> */}
 
         {/* <!-- About area start here --> */}
@@ -151,138 +62,56 @@ import React from 'react';
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <div className="section-header mb-20">
-                            <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                <i className="fa-regular fa-angles-left pe-1"></i> ABOUT US <i
-                                    className="fa-regular fa-angles-right ps-1"></i>
-                            </h5>
-                            <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Discover Charity
-                                Organization Information</h2>
-                            <p className="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">It is a long
-                                established fact that a reader will be distracted the readable content of a
-                                page when looking at layout the
-                                point of using lorem Ipsum <br/>
-                                less normal distribution of letters.</p>
-                        </div>
-                        <div className="about__content">
-                            <div className="progress-area wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                <div className="progress__title mb-10">
-                                    <h5 className="fs-16">Charity</h5>
-                                    <span><span className="progress-count">80</span>%</span>
-                                </div>
-                                <div className="progress">
-                                    <div className="progress-bar wow slideInLeft" data-wow-duration=".8s" role="progressbar"
-                                        style={{width: "80%"}} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <div className="section-header mb-20">
+                                <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <i className="fa-regular fa-angles-left pe-1"></i> ABOUT US <i
+                                        className="fa-regular fa-angles-right ps-1"></i>
+                                </h5>
+                                <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Explore
+                                    Information About Charitable Organizations</h2>
+                                <p className="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">It is a long
+                                    established fact that a reader will be distracted the readable content
+                                    of a
+                                    page when looking at layout the
+                                    point of using lorem Ipsum <br/>
+                                    less normal distribution of letters.</p>
+                            </div>
+                            <div className="about-two__content">
+                                <div className="item mb-30 wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div className="icon">
+                                        <img src="/images/icon/about-icon1.png" alt="icon"/>
+                                    </div>
+                                    <div className="content">
+                                        <h6 className="mb-10">Quick Fundraise</h6>
+                                        <p>Embarrassing hidden in the middle of All the Lorem Ipsum generators on the
+                                            Internet to repeat predefined chunks</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="row g-4 mt-10 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
-                                <div className="col-6">
-                                    <h6 className="fs-14">
-                                        <svg className="me-1" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clipPath="url(#clip0_20_5)">
-                                                <path
-                                                    d="M17.4853 2.46073C17.2205 2.19547 16.7909 2.19502 16.5261 2.4596L8.38765 10.5765L5.45133 7.38742C5.1976 7.112 4.76863 7.09415 4.49276 7.34783C4.2171 7.60156 4.19945 8.03074 4.45317 8.3064L7.86776 12.0147C7.92961 12.082 8.00443 12.136 8.08771 12.1736C8.17099 12.2111 8.26101 12.2315 8.35235 12.2334C8.35731 12.2336 8.36209 12.2336 8.36683 12.2336C8.54636 12.2335 8.71855 12.1624 8.84577 12.0357L17.484 3.42018C17.7494 3.15563 17.7499 2.72598 17.4853 2.46073Z"
-                                                    fill="#F74F22" />
-                                                <path
-                                                    d="M17.3216 8.32159C16.9469 8.32159 16.6432 8.62527 16.6432 9C16.6432 13.2146 13.2146 16.6432 9 16.6432C4.78561 16.6432 1.35679 13.2146 1.35679 9C1.35679 4.78561 4.78561 1.35679 9 1.35679C9.3747 1.35679 9.67841 1.05311 9.67841 0.67841C9.67841 0.30368 9.3747 0 9 0C4.03734 0 0 4.03734 0 9C0 13.9624 4.03734 18 9 18C13.9624 18 18 13.9624 18 9C18 8.6253 17.6963 8.32159 17.3216 8.32159Z"
-                                                    fill="#F74F22" />
-                                            </g>
-                                            <defs>
-                                                <clipPath>
-                                                    <rect width="18" height="18" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        Immediate Assistance
-                                    </h6>
+                                <div className="item wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <div className="icon">
+                                        <img src="/images/icon/about-icon2.png" alt="icon"/>
+                                    </div>
+                                    <div className="content">
+                                        <h6 className="mb-10">Long -Time Support</h6>
+                                        <p>Embarrassing hidden in the middle of All the Lorem Ipsum generators on the
+                                            Internet to repeat predefined chunks</p>
+                                    </div>
                                 </div>
-                                <div className="col-6">
-                                    <h6 className="fs-14">
-                                        <svg className="me-1" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clipPath="url(#clip0_20_5)">
-                                                <path
-                                                    d="M17.4853 2.46073C17.2205 2.19547 16.7909 2.19502 16.5261 2.4596L8.38765 10.5765L5.45133 7.38742C5.1976 7.112 4.76863 7.09415 4.49276 7.34783C4.2171 7.60156 4.19945 8.03074 4.45317 8.3064L7.86776 12.0147C7.92961 12.082 8.00443 12.136 8.08771 12.1736C8.17099 12.2111 8.26101 12.2315 8.35235 12.2334C8.35731 12.2336 8.36209 12.2336 8.36683 12.2336C8.54636 12.2335 8.71855 12.1624 8.84577 12.0357L17.484 3.42018C17.7494 3.15563 17.7499 2.72598 17.4853 2.46073Z"
-                                                    fill="#F74F22" />
-                                                <path
-                                                    d="M17.3216 8.32159C16.9469 8.32159 16.6432 8.62527 16.6432 9C16.6432 13.2146 13.2146 16.6432 9 16.6432C4.78561 16.6432 1.35679 13.2146 1.35679 9C1.35679 4.78561 4.78561 1.35679 9 1.35679C9.3747 1.35679 9.67841 1.05311 9.67841 0.67841C9.67841 0.30368 9.3747 0 9 0C4.03734 0 0 4.03734 0 9C0 13.9624 4.03734 18 9 18C13.9624 18 18 13.9624 18 9C18 8.6253 17.6963 8.32159 17.3216 8.32159Z"
-                                                    fill="#F74F22" />
-                                            </g>
-                                            <defs>
-                                                <clipPath>
-                                                    <rect width="18" height="18" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        Quick Fundraise
-                                    </h6>
-                                </div>
-                                <div className="col-6">
-                                    <h6 className="fs-14">
-                                        <svg className="me-1" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clipPath="url(#clip0_20_5)">
-                                                <path
-                                                    d="M17.4853 2.46073C17.2205 2.19547 16.7909 2.19502 16.5261 2.4596L8.38765 10.5765L5.45133 7.38742C5.1976 7.112 4.76863 7.09415 4.49276 7.34783C4.2171 7.60156 4.19945 8.03074 4.45317 8.3064L7.86776 12.0147C7.92961 12.082 8.00443 12.136 8.08771 12.1736C8.17099 12.2111 8.26101 12.2315 8.35235 12.2334C8.35731 12.2336 8.36209 12.2336 8.36683 12.2336C8.54636 12.2335 8.71855 12.1624 8.84577 12.0357L17.484 3.42018C17.7494 3.15563 17.7499 2.72598 17.4853 2.46073Z"
-                                                    fill="#F74F22" />
-                                                <path
-                                                    d="M17.3216 8.32159C16.9469 8.32159 16.6432 8.62527 16.6432 9C16.6432 13.2146 13.2146 16.6432 9 16.6432C4.78561 16.6432 1.35679 13.2146 1.35679 9C1.35679 4.78561 4.78561 1.35679 9 1.35679C9.3747 1.35679 9.67841 1.05311 9.67841 0.67841C9.67841 0.30368 9.3747 0 9 0C4.03734 0 0 4.03734 0 9C0 13.9624 4.03734 18 9 18C13.9624 18 18 13.9624 18 9C18 8.6253 17.6963 8.32159 17.3216 8.32159Z"
-                                                    fill="#F74F22" />
-                                            </g>
-                                            <defs>
-                                                <clipPath>
-                                                    <rect width="18" height="18" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        Long-Time Support
-                                    </h6>
-                                </div>
-                                <div className="col-6">
-                                    <h6 className="fs-14">
-                                        <svg className="me-1" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clipPath="url(#clip0_20_5)">
-                                                <path
-                                                    d="M17.4853 2.46073C17.2205 2.19547 16.7909 2.19502 16.5261 2.4596L8.38765 10.5765L5.45133 7.38742C5.1976 7.112 4.76863 7.09415 4.49276 7.34783C4.2171 7.60156 4.19945 8.03074 4.45317 8.3064L7.86776 12.0147C7.92961 12.082 8.00443 12.136 8.08771 12.1736C8.17099 12.2111 8.26101 12.2315 8.35235 12.2334C8.35731 12.2336 8.36209 12.2336 8.36683 12.2336C8.54636 12.2335 8.71855 12.1624 8.84577 12.0357L17.484 3.42018C17.7494 3.15563 17.7499 2.72598 17.4853 2.46073Z"
-                                                    fill="#F74F22" />
-                                                <path
-                                                    d="M17.3216 8.32159C16.9469 8.32159 16.6432 8.62527 16.6432 9C16.6432 13.2146 13.2146 16.6432 9 16.6432C4.78561 16.6432 1.35679 13.2146 1.35679 9C1.35679 4.78561 4.78561 1.35679 9 1.35679C9.3747 1.35679 9.67841 1.05311 9.67841 0.67841C9.67841 0.30368 9.3747 0 9 0C4.03734 0 0 4.03734 0 9C0 13.9624 4.03734 18 9 18C13.9624 18 18 13.9624 18 9C18 8.6253 17.6963 8.32159 17.3216 8.32159Z"
-                                                    fill="#F74F22" />
-                                            </g>
-                                            <defs>
-                                                <clipPath>
-                                                    <rect width="18" height="18" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        Handle With Care
-                                    </h6>
-                                </div>
-                            </div>
-                            <div className="d-flex align-content-center flex-wrap gap-4 mt-40 wow fadeInDown"
-                                data-wow-delay="400ms" data-wow-duration="1500ms">
-                                <div className="btn-two">
-                                    <span className="btn-circle">
-                                    </span>
-                                    <a href="about.html" className="btn-inner">
-                                        <span className="btn-text">
-                                            EXPLORE MORE
+                                <div className="d-flex align-content-center flex-wrap gap-4 mt-40 wow fadeInDown"
+                                    data-wow-delay="400ms" data-wow-duration="1500ms">
+                                    <div className="btn-two">
+                                        <span className="btn-circle">
                                         </span>
-                                    </a>
-                                </div>
-                                <div className="about-info">
-                                    <img src="images/about/about-info.png" alt="image"/>
-                                    <div className="con">
-                                        <h5 className="fs-16">Albert Flores</h5>
-                                        <span className="sm-font">CEO, Donatim</span>
+                                        <a href="about.html" className="btn-inner">
+                                            <span className="btn-text">
+                                                ABOUT MORE
+                                            </span>
+                                        </a>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -342,281 +171,108 @@ import React from 'react';
         {/* <!-- Video area end here --> */}
 
         {/* <!-- Cause area start here --> */}
-        <section className="cause-area pt-120 pb-100">
+        <section className="cause-area pb-120 mt-20">
             <div className="container">
-                <div className="d-flex align-items-center justify-content-between flex-wrap gap-4 mb-40">
-                    <div className="section-header">
-                        <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <i className="fa-regular fa-angles-left pe-1"></i> RECENT CAUSES <i
-                                className="fa-regular fa-angles-right ps-1"></i>
-                        </h5>
-                        <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Introducing Our
-                            Campaigns</h2>
-                    </div>
-                    <div className="arry-btn wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <button className="arry-prev cause__arry-prev"><i className="fa-regular fa-chevron-left"></i></button>
-                        <button className="arry-next cause__arry-next active ml-10"><i
-                                className="fa-regular fa-chevron-right"></i></button>
-                    </div>
+                <div className="section-header mb-60 text-center">
+                    <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <i className="fa-regular fa-angles-left pe-1"></i> Features CAUSES <i
+                            className="fa-regular fa-angles-right ps-1"></i>
+                    </h5>
+                    <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Introducing Our Campaigns
+                    </h2>
                 </div>
-            </div>
-            <div className="cause__slider-wrp">
-                <div className="swiper cause__slider">
-                    <div className="swiper-wrapper py-4">
-                        <div className="swiper-slide">
-                            <div className="cause__item">
-                                <div className="cause__image image">
-                                    <img src="images/cause/cause-image1.jpg" alt="image"/>
-                                    <span className="cause-tag">Education</span>
-                                </div>
-                                <div className="cause__content">
-                                    <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Rebecca's
-                                            New Album
-                                            Aid
-                                            for
-                                            the
-                                            Needy</a></h4>
-                                    <div className="progress-area">
-                                        <div className="progress__item">
-                                            x<div className="progress__content" style={{width:'50%'}}><span>50%</span></div>
-                                        </div>
-                                        <div className="progress__goal mt-15">
-                                            <h6>Goal : <span>$40.000</span></h6>
-                                            <h6>Raised : <span>$20.000</span></h6>
-                                        </div>
-                                        <div className="btn-three mt-30">
-                                            <span className="btn-circle">
+                <div className="row g-4">
+                    <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div className="cause__item">
+                            <div className="cause__image image">
+                                <img src="/images/cause/cause-image2.jpg" alt="image"/>
+                                <span className="cause-tag">Foods</span>
+                            </div>
+                            <div className="cause__content">
+                                <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Charity
+                                        Showcases a
+                                        Nation's Kindness</a></h4>
+                                <div className="progress-area">
+                                    <div className="progress__item">
+                                        <div className="progress__content" style={{width: "70%"}}><span>70%</span></div>
+                                    </div>
+                                    <div className="progress__goal mt-15">
+                                        <h6>Goal : <span>$40.000</span></h6>
+                                        <h6>Raised : <span>$30.000</span></h6>
+                                    </div>
+                                    <div className="btn-three mt-30">
+                                        <span className="btn-circle">
+                                        </span>
+                                        <a href="cause-single.html" className="btn-inner">
+                                            <span className="btn-text">
+                                                DONATE NOW
                                             </span>
-                                            <a href="cause-single.html" className="btn-inner">
-                                                <span className="btn-text">
-                                                    DONATE NOW
-                                                </span>
-                                            </a>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="swiper-slide">
-                            <div className="cause__item">
-                                <div className="cause__image image">
-                                    <img src="images/cause/cause-image2.jpg" alt="image"/>
-                                    <span className="cause-tag">Foods</span>
-                                </div>
-                                <div className="cause__content">
-                                    <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Charity
-                                            Showcases a
-                                            Nation's Kindness</a></h4>
-                                    <div className="progress-area">
-                                        <div className="progress__item">
-                                            <div className="progress__content" style={{width: "70%"}}><span>70%</span></div>
-                                        </div>
-                                        <div className="progress__goal mt-15">
-                                            <h6>Goal : <span>$40.000</span></h6>
-                                            <h6>Raised : <span>$30.000</span></h6>
-                                        </div>
-                                        <div className="btn-three mt-30">
-                                            <span className="btn-circle">
+                    </div>
+                    <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div className="cause__item">
+                            <div className="cause__image image">
+                                <img src="/images/cause/cause-image3.jpg" alt="image"/>
+                                <span className="cause-tag">Medical</span>
+                            </div>
+                            <div className="cause__content">
+                                <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Construct
+                                        Dwellings
+                                        African Impoverished Women
+                                    </a></h4>
+                                <div className="progress-area">
+                                    <div className="progress__item">
+                                        <div className="progress__content" style={{width: "90%"}}><span>90%</span></div>
+                                    </div>
+                                    <div className="progress__goal mt-15">
+                                        <h6>Goal : <span>$40.000</span></h6>
+                                        <h6>Raised : <span>$35.000</span></h6>
+                                    </div>
+                                    <div className="btn-three mt-30">
+                                        <span className="btn-circle">
+                                        </span>
+                                        <a href="cause-single.html" className="btn-inner">
+                                            <span className="btn-text">
+                                                DONATE NOW
                                             </span>
-                                            <a href="cause-single.html" className="btn-inner">
-                                                <span className="btn-text">
-                                                    DONATE NOW
-                                                </span>
-                                            </a>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="swiper-slide">
-                            <div className="cause__item">
-                                <div className="cause__image image">
-                                    <img src="images/cause/cause-image3.jpg" alt="image"/>
-                                    <span className="cause-tag">Medical</span>
-                                </div>
-                                <div className="cause__content">
-                                    <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Construct
-                                            Dwellings
-                                            African Impoverished Women
-                                        </a></h4>
-                                    <div className="progress-area">
-                                        <div className="progress__item">
-                                            <div className="progress__content" style={{width: "90%"}}><span>90%</span></div>
-                                        </div>
-                                        <div className="progress__goal mt-15">
-                                            <h6>Goal : <span>$40.000</span></h6>
-                                            <h6>Raised : <span>$35.000</span></h6>
-                                        </div>
-                                        <div className="btn-three mt-30">
-                                            <span className="btn-circle">
-                                            </span>
-                                            <a href="cause-single.html" className="btn-inner">
-                                                <span className="btn-text">
-                                                    DONATE NOW
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div className="cause__item">
+                            <div className="cause__image image">
+                                <img src="/images/cause/cause-image1.jpg" alt="image"/>
+                                <span className="cause-tag">Education</span>
                             </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="cause__item">
-                                <div className="cause__image image">
-                                    <img src="images/cause/cause-image4.jpg" alt="image"/>
-                                    <span className="cause-tag">Water</span>
-                                </div>
-                                <div className="cause__content">
-                                    <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Provide
-                                            Healthy
-                                            Meals to
-                                            an Impoverished Rural Child</a></h4>
-                                    <div className="progress-area">
-                                        <div className="progress__item">
-                                            <div className="progress__content" style={{width: "65%"}}><span>65%</span></div>
-                                        </div>
-                                        <div className="progress__goal mt-15">
-                                            <h6>Goal : <span>$40.000</span></h6>
-                                            <h6>Raised : <span>$25.000</span></h6>
-                                        </div>
-                                        <div className="btn-three mt-30">
-                                            <span className="btn-circle">
-                                            </span>
-                                            <a href="cause-single.html" className="btn-inner">
-                                                <span className="btn-text">
-                                                    DONATE NOW
-                                                </span>
-                                            </a>
-                                        </div>
+                            <div className="cause__content">
+                                <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Rebecca's New
+                                        Album Aid
+                                        for
+                                        the
+                                        Needy</a></h4>
+                                <div className="progress-area">
+                                    <div className="progress__item">
+                                        <div className="progress__content" style={{width: "50%"}}><span>50%</span></div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="cause__item">
-                                <div className="cause__image image">
-                                    <img src="images/cause/cause-image1.jpg" alt="image"/>
-                                    <span className="cause-tag">Education</span>
-                                </div>
-                                <div className="cause__content">
-                                    <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Rebecca's
-                                            New Album
-                                            Aid
-                                            for
-                                            the
-                                            Needy</a></h4>
-                                    <div className="progress-area">
-                                        <div className="progress__item">
-                                            <div className="progress__content" style={{width: "50%"}}><span>50%</span></div>
-                                        </div>
-                                        <div className="progress__goal mt-15">
-                                            <h6>Goal : <span>$40.000</span></h6>
-                                            <h6>Raised : <span>$20.000</span></h6>
-                                        </div>
-                                        <div className="btn-three mt-30">
-                                            <span className="btn-circle">
-                                            </span>
-                                            <a href="cause-single.html" className="btn-inner">
-                                                <span className="btn-text">
-                                                    DONATE NOW
-                                                </span>
-                                            </a>
-                                        </div>
+                                    <div className="progress__goal mt-15">
+                                        <h6>Goal : <span>$40.000</span></h6>
+                                        <h6>Raised : <span>$20.000</span></h6>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="cause__item">
-                                <div className="cause__image image">
-                                    <img src="images/cause/cause-image2.jpg" alt="image"/>
-                                    <span className="cause-tag">Foods</span>
-                                </div>
-                                <div className="cause__content">
-                                    <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Charity
-                                            Showcases a
-                                            Nation's Kindness</a></h4>
-                                    <div className="progress-area">
-                                        <div className="progress__item">
-                                            <div className="progress__content" style={{width: "70%"}}><span>70%</span></div>
-                                        </div>
-                                        <div className="progress__goal mt-15">
-                                            <h6>Goal : <span>$40.000</span></h6>
-                                            <h6>Raised : <span>$30.000</span></h6>
-                                        </div>
-                                        <div className="btn-three mt-30">
-                                            <span className="btn-circle">
+                                    <div className="btn-three mt-30">
+                                        <span className="btn-circle">
+                                        </span>
+                                        <a href="cause-single.html" className="btn-inner">
+                                            <span className="btn-text">
+                                                DONATE NOW
                                             </span>
-                                            <a href="cause-single.html" className="btn-inner">
-                                                <span className="btn-text">
-                                                    DONATE NOW
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="cause__item">
-                                <div className="cause__image image">
-                                    <img src="images/cause/cause-image3.jpg" alt="image"/>
-                                    <span className="cause-tag">Medical</span>
-                                </div>
-                                <div className="cause__content">
-                                    <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Construct
-                                            Dwellings
-                                            African Impoverished Women
-                                        </a></h4>
-                                    <div className="progress-area">
-                                        <div className="progress__item">
-                                            <div className="progress__content" style={{width: "90%"}}><span>90%</span></div>
-                                        </div>
-                                        <div className="progress__goal mt-15">
-                                            <h6>Goal : <span>$40.000</span></h6>
-                                            <h6>Raised : <span>$35.000</span></h6>
-                                        </div>
-                                        <div className="btn-three mt-30">
-                                            <span className="btn-circle">
-                                            </span>
-                                            <a href="cause-single.html" className="btn-inner">
-                                                <span className="btn-text">
-                                                    DONATE NOW
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="cause__item">
-                                <div className="cause__image image">
-                                    <img src="images/cause/cause-image4.jpg" alt="image"/>
-                                    <span className="cause-tag">Water</span>
-                                </div>
-                                <div className="cause__content">
-                                    <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Provide
-                                            Healthy
-                                            Meals to
-                                            an Impoverished Rural Child</a></h4>
-                                    <div className="progress-area">
-                                        <div className="progress__item">
-                                            <div className="progress__content" style={{width: "65%"}}><span>65%</span></div>
-                                        </div>
-                                        <div className="progress__goal mt-15">
-                                            <h6>Goal : <span>$40.000</span></h6>
-                                            <h6>Raised : <span>$25.000</span></h6>
-                                        </div>
-                                        <div className="btn-three mt-30">
-                                            <span className="btn-circle">
-                                            </span>
-                                            <a href="cause-single.html" className="btn-inner">
-                                                <span className="btn-text">
-                                                    DONATE NOW
-                                                </span>
-                                            </a>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -977,216 +633,145 @@ import React from 'react';
             </div>
         </section>
         {/* <!-- Event area end here --> */}
-
-        {/* <!-- Testimonial area start here --> */}
-        <section className="testimonial-area pt-120 pb-120 sub-bg">
+             {/* mission area start area  */}
+             <section className="counter-area pt-100 pb-100">
             <div className="container">
-                <div className="d-flex align-items-center justify-content-between flex-wrap gap-4 mb-60">
-                    <div className="section-header">
-                        <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <i className="fa-regular fa-angles-left pe-1"></i> Testimonials <i
-                                className="fa-regular fa-angles-right ps-1"></i>
-                        </h5>
-                        <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Why People Love Us
-                        </h2>
-                    </div>
-                    <div className="arry-btn wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <button className="arry-prev testimonial__arry-prev"><i
-                                className="fa-regular fa-chevron-left"></i></button>
-                        <button className="arry-next testimonial__arry-next active ml-10"><i
-                                className="fa-regular fa-chevron-right"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div className="swiper testimonial__slider">
-                <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                        <div className="testimonial__item">
-                            <svg className="shape" width="59" height="67" viewBox="0 0 59 67" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="59"
-                                    height="67">
-                                    <rect width="59" height="67" fill="#F74F22" />
-                                </mask>
-                                <g mask="url(#mask0_87_43)">
-                                    <circle opacity="0.7" cx="59" cy="9" r="56" fill="#F74F22" />
-                                    <circle cx="59" cy="9" r="47.5" fill="#F74F22" stroke="white"
-                                        strokeDasharray="2 2" />
-                                </g>
-                            </svg>
-
-                            <div className="top">
-                                <div className="image">
-                                    <img src="images/testimonial/testimonial-image1.png" alt="image"/>
-                                    <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29 28C30.625 28 32 26.625 32 25V10C32 4.4375 27.5 0 22 0H21.5C20.625 0 20 0.625 20 1.5V4.5C20 5.3125 20.625 6 21.5 6H22C24.1875 6 26 7.75 26 10V14H21C19.3125 14 18 15.3125 18 17V25C18 26.625 19.3125 28 21 28H29ZM11 28C12.625 28 14 26.625 14 25V10C14 4.4375 9.5 0 4 0H3.5C2.625 0 2 0.625 2 1.5V4.5C2 5.3125 2.625 6 3.5 6H4C6.1875 6 8 7.75 8 10V14H3C1.3125 14 0 15.3125 0 17V25C0 26.625 1.3125 28 3 28H11Z"
-                                            fill="#F74F22" />
-                                    </svg>
-
-                                </div>
-                                <div className="con">
-                                    <div className="star">
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                    </div>
-                                    <h5>Esther Howard</h5>
-                                    <span>Dog Trainer</span>
-                                </div>
-                            </div>
-                            <p className="mt-30">Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the
-                                laoreet
-                                est, a pretium
-                                metus aliquam eget. Maecenas
-                                porta is nunc ut viverra. Aenean pulvinar maximus leo.</p>
+                <div className="counter__wrp">
+                    <div className="counter__item wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div className="icon">
+                            <img src="/images/icon/counter1.png" alt="icon"/>
+                        </div>
+                        <div className="content">
+                            <h3><span className="count">2,500</span>+</h3>
+                            <span>Total Happy Children</span>
                         </div>
                     </div>
-                    <div className="swiper-slide">
-                        <div className="testimonial__item">
-                            <svg className="shape" width="59" height="67" viewBox="0 0 59 67" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="59"
-                                    height="67">
-                                    <rect width="59" height="67" fill="#F74F22" />
-                                </mask>
-                                <g mask="url(#mask0_87_43)">
-                                    <circle opacity="0.7" cx="59" cy="9" r="56" fill="#F74F22" />
-                                    <circle cx="59" cy="9" r="47.5" fill="#F74F22" stroke="white"
-                                        strokeDasharray="2 2" />
-                                </g>
-                            </svg>
-
-                            <div className="top">
-                                <div className="image">
-                                    <img src="images/testimonial/testimonial-image2.png" alt="image"/>
-                                    <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29 28C30.625 28 32 26.625 32 25V10C32 4.4375 27.5 0 22 0H21.5C20.625 0 20 0.625 20 1.5V4.5C20 5.3125 20.625 6 21.5 6H22C24.1875 6 26 7.75 26 10V14H21C19.3125 14 18 15.3125 18 17V25C18 26.625 19.3125 28 21 28H29ZM11 28C12.625 28 14 26.625 14 25V10C14 4.4375 9.5 0 4 0H3.5C2.625 0 2 0.625 2 1.5V4.5C2 5.3125 2.625 6 3.5 6H4C6.1875 6 8 7.75 8 10V14H3C1.3125 14 0 15.3125 0 17V25C0 26.625 1.3125 28 3 28H11Z"
-                                            fill="#F74F22" />
-                                    </svg>
-
-                                </div>
-                                <div className="con">
-                                    <div className="star">
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                    </div>
-                                    <h5>Annette Black</h5>
-                                    <span>Software Developer</span>
-                                </div>
-                            </div>
-                            <p className="mt-30">Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the
-                                laoreet
-                                est, a pretium
-                                metus aliquam eget. Maecenas
-                                porta is nunc ut viverra. Aenean pulvinar maximus leo.</p>
+                    <div className="counter__item wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div className="icon">
+                            <img src="/images/icon/counter2.png" alt="icon"/>
+                        </div>
+                        <div className="content">
+                            <h3><span className="count">270</span>+</h3>
+                            <span>Total Our Volunteer</span>
                         </div>
                     </div>
-                    <div className="swiper-slide">
-                        <div className="testimonial__item">
-                            <svg className="shape" width="59" height="67" viewBox="0 0 59 67" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="59"
-                                    height="67">
-                                    <rect width="59" height="67" fill="#F74F22" />
-                                </mask>
-                                <g mask="url(#mask0_87_43)">
-                                    <circle opacity="0.7" cx="59" cy="9" r="56" fill="#F74F22" />
-                                    <circle cx="59" cy="9" r="47.5" fill="#F74F22" stroke="white"
-                                        strokeDasharray="2 2" />
-                                </g>
-                            </svg>
-
-                            <div className="top">
-                                <div className="image">
-                                    <img src="images/testimonial/testimonial-image3.png" alt="image"/>
-                                    <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29 28C30.625 28 32 26.625 32 25V10C32 4.4375 27.5 0 22 0H21.5C20.625 0 20 0.625 20 1.5V4.5C20 5.3125 20.625 6 21.5 6H22C24.1875 6 26 7.75 26 10V14H21C19.3125 14 18 15.3125 18 17V25C18 26.625 19.3125 28 21 28H29ZM11 28C12.625 28 14 26.625 14 25V10C14 4.4375 9.5 0 4 0H3.5C2.625 0 2 0.625 2 1.5V4.5C2 5.3125 2.625 6 3.5 6H4C6.1875 6 8 7.75 8 10V14H3C1.3125 14 0 15.3125 0 17V25C0 26.625 1.3125 28 3 28H11Z"
-                                            fill="#F74F22" />
-                                    </svg>
-
-                                </div>
-                                <div className="con">
-                                    <div className="star">
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                    </div>
-                                    <h5>Kristin Watson</h5>
-                                    <span>Team Leader</span>
-                                </div>
-                            </div>
-                            <p className="mt-30">Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the
-                                laoreet
-                                est, a pretium
-                                metus aliquam eget. Maecenas
-                                porta is nunc ut viverra. Aenean pulvinar maximus leo.</p>
+                    <div className="counter__item wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div className="icon">
+                            <img src="/images/icon/counter3.png" alt="icon"/>
+                        </div>
+                        <div className="content">
+                            <h3><span className="count">3,150</span>+</h3>
+                            <span>Our Products & Gifts</span>
                         </div>
                     </div>
-                    <div className="swiper-slide">
-                        <div className="testimonial__item">
-                            <svg className="shape" width="59" height="67" viewBox="0 0 59 67" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="59"
-                                    height="67">
-                                    <rect width="59" height="67" fill="#F74F22" />
-                                </mask>
-                                <g mask="url(#mask0_87_43)">
-                                    <circle opacity="0.7" cx="59" cy="9" r="56" fill="#F74F22" />
-                                    <circle cx="59" cy="9" r="47.5" fill="#F74F22" stroke="white"
-                                        strokeDasharray="2 2" />
-                                </g>
-                            </svg>
-
-                            <div className="top">
-                                <div className="image">
-                                    <img src="images/testimonial/testimonial-image4.png" alt="image"/>
-                                    <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29 28C30.625 28 32 26.625 32 25V10C32 4.4375 27.5 0 22 0H21.5C20.625 0 20 0.625 20 1.5V4.5C20 5.3125 20.625 6 21.5 6H22C24.1875 6 26 7.75 26 10V14H21C19.3125 14 18 15.3125 18 17V25C18 26.625 19.3125 28 21 28H29ZM11 28C12.625 28 14 26.625 14 25V10C14 4.4375 9.5 0 4 0H3.5C2.625 0 2 0.625 2 1.5V4.5C2 5.3125 2.625 6 3.5 6H4C6.1875 6 8 7.75 8 10V14H3C1.3125 14 0 15.3125 0 17V25C0 26.625 1.3125 28 3 28H11Z"
-                                            fill="#F74F22" />
-                                    </svg>
-
-                                </div>
-                                <div className="con">
-                                    <div className="star">
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                    </div>
-                                    <h5>Ralph Edwards</h5>
-                                    <span>UI/UX Designer</span>
-                                </div>
-                            </div>
-                            <p className="mt-30">Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the
-                                laoreet
-                                est, a pretium
-                                metus aliquam eget. Maecenas
-                                porta is nunc ut viverra. Aenean pulvinar maximus leo.</p>
+                    <div className="counter__item wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div className="icon">
+                            <img src="/images/icon/counter4.png" alt="icon"/>
+                        </div>
+                        <div className="content">
+                            <h3><span className="count">8,700</span>+</h3>
+                            <span>Worldwide Donor</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        {/* <!-- Counter area end here --> */}
+
+        {/* <!-- Mission area start here --> */}
+        <section className="mission-area bg-image pt-120 pb-120" style={{backgroundImage:"url('/images/bg/mission-bg.jpg')"}}
+         >
+            <div className="container">
+                <div className="row">
+                    <div className="col-xl-7">
+                        <div className="section-header mb-30">
+                            <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <i className="fa-regular fa-angles-left pe-1"></i> Our MISSION <i
+                                    className="fa-regular fa-angles-right ps-1"></i>
+                            </h5>
+                            <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Our Mission &
+                                Goals</h2>
+                            <p className="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">It is a long
+                                established fact that a reader will be distracted the readable <br/> content
+                                of a
+                                page when looking at layout the
+                                point of using lorem Ipsum <br/>
+                                less normal distribution of letters.</p>
+                        </div>
+                        <div className="mission__item">
+                            <div className="row g-4">
+                                <div className="col-md-6 wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div className="about-two__content">
+                                        <div className="item">
+                                            <div className="icon border-none primary-bg">
+                                                <img src="/images/icon/mission-icon1.png" alt="icon"/>
+                                            </div>
+                                            <div className="content">
+                                                <h6 className="mb-2">Quick Fundraise</h6>
+                                                <p>Embarrassing hidden in the
+                                                    generators on the Internet</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <div className="about-two__content">
+                                        <div className="item">
+                                            <div className="icon border-none primary-bg">
+                                                <img src="/images/icon/mission-icon2.png" alt="icon"/>
+                                            </div>
+                                            <div className="content">
+                                                <h6 className="mb-2">Become Volunteer</h6>
+                                                <p>Embarrassing hidden in the
+                                                    generators on the Internet</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                    <div className="about-two__content">
+                                        <div className="item">
+                                            <div className="icon border-none primary-bg">
+                                                <img src="/images/icon/mission-icon3.png" alt="icon"/>
+                                            </div>
+                                            <div className="content">
+                                                <h6 className="mb-2">Build And Repear</h6>
+                                                <p>Embarrassing hidden in the
+                                                    generators on the Internet</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 wow fadeInDown" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                    <div className="about-two__content">
+                                        <div className="item">
+                                            <div className="icon border-none primary-bg">
+                                                <img src="/images/icon/mission-icon4.png" alt="icon"/>
+                                            </div>
+                                            <div className="content">
+                                                <h6 className="mb-2">Handle With Care</h6>
+                                                <p>Embarrassing hidden in the
+                                                    generators on the Internet</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+             {/* mission area end area  */}
+        {/* <!-- Testimonial area start here --> */}
+        <BrandSlider/>
+       
+
+        <TestimonialSlider/>
         {/* <!-- Testimonial area end here --> */}
 
         {/* <!-- Blog area start here --> */}
-        <section className="blog-area pt-120">
+        {/* <section className="blog-area pt-120">
             <div className="container">
                 <div className="section-header mb-60 text-center">
                     <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
@@ -1329,43 +914,11 @@ import React from 'react';
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         {/* <!-- Blog area end here --> */}
 
         {/* <!-- Brand area start here --> */}
-        <div className="brand-area pt-100 pb-100 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
-            <div className="container">
-                <div className="swiper brand__slider">
-                    <div className="swiper-wrapper">
-                        <div className="swiper-slide">
-                            <div className="image">
-                                <img src="images/brand/brand-image1.png" alt="image"/>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="image">
-                                <img src="images/brand/brand-image2.png" alt="image"/>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="image">
-                                <img src="images/brand/brand-image3.png" alt="image"/>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="image">
-                                <img src="images/brand/brand-image4.png" alt="image"/>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="image">
-                                <img src="images/brand/brand-image5.png" alt="image"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         {/* <!-- Brand area end here --> */}
     </main>
     </>

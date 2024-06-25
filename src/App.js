@@ -21,7 +21,9 @@ import EventList from './components/events/EventList';
 import EventSingle from './components/events/EventSingle';
 import BlogSingle from './components/blogs/BlogSingle';
 import Blog from './components/blogs/Blog';
+
 import $ from 'jquery';
+
 
 function App() {
   return (

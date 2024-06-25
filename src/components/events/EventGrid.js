@@ -371,7 +371,6 @@ export const EventGrid = () => {
                 </div> */}
             </div>
         </section>
-        {/* <!-- Event area end here --> */}
     </main>
     </>
   )
