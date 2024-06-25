@@ -1,4 +1,6 @@
 import React from 'react';
+import Program from './section/Program';
+import TestimonialSlider from './animation/TestimonialSlider';
 
 
 function About(){
@@ -30,7 +32,7 @@ function About(){
 
     <main>
         {/* <!-- Page banner area start here --> */}
-        <section className="banner__inner-page bg-image pt-160 pb-160 bg-image" style={{backgroundImage: "url('images/banner/banner-inner-page.jpg')"}}
+        <section className="banner__inner-page bg-image pt-160 pb-160 bg-image" style={{backgroundImage: "url('images/banner/about-banners.jpg')"}}
             >
             <div className="container">
                 <h2 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">About Us</h2>
@@ -43,7 +45,7 @@ function About(){
         {/* <!-- Page banner area end here --> */}
 
         {/* <!-- About area start here --> */}
-        <section className="about-area pt-120 pb-120">
+         <section className="about-area pt-120 pb-120">
             <div className="container">
                 <div className="row g-2 align-items-center">
                     <div className="col-lg-6 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -183,7 +185,7 @@ function About(){
                                     </a>
                                 </div>
                                 <div className="about-info">
-                                    <img src="assets/images/about/about-info.png" alt="image"/>
+                                    <img src="/images/about/about-info.png" alt="image"/>
                                     <div className="con">
                                         <h5 className="fs-16">Albert Flores</h5>
                                         <span className="sm-font">CEO, Donatim</span>
@@ -194,43 +196,11 @@ function About(){
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
         {/* <!-- About area end here --> */}
-
         {/* <!-- Service area start here --> */}
-        <section className="service-area pt-100 pb-100 sub-bg">
-            <div className="container">
-                <div className="row g-4">
-                    <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <div className="service__item">
-                            <div className="service__icon"><img src="images/icon/service1.png" alt="icon"/></div>
-                            <div className="service__content">
-                                <h3 className="text-white">Kids Education</h3>
-                                <p className="text-white">Every is to be welcomed in certain circumstances</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div className="service__item active">
-                            <div className="service__icon"><img src="images/icon/service2.png" alt="icon"/></div>
-                            <div className="service__content">
-                                <h3 className="text-white">Healthy Food</h3>
-                                <p className="text-white">Every is to be welcomed in certain circumstances</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <div className="service__item">
-                            <div className="service__icon"><img src="images/icon/service3.png" alt="icon"/></div>
-                            <div className="service__content">
-                                <h3 className="text-white">Medical Help</h3>
-                                <p className="text-white">Every is to be welcomed in certain circumstances</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<Program/>
+       
         {/* <!-- Service area end here --> */}
 
         {/* <!-- About area start here --> */}
@@ -379,210 +349,8 @@ function About(){
         {/* <!-- Team area end here --> */}
 
         {/* <!-- Testimonial area start here --> */}
-        <section className="testimonial-area pt-120 pb-120">
-            <div className="container">
-                <div className="d-flex align-items-center justify-content-between flex-wrap gap-4 mb-50">
-                    <div className="section-header">
-                        <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <i className="fa-regular fa-angles-left pe-1"></i> Testimonials <i
-                                className="fa-regular fa-angles-right ps-1"></i>
-                        </h5>
-                        <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Why People Love Us
-                        </h2>
-                    </div>
-                    <div className="arry-btn wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <button className="arry-prev testimonial__arry-prev"><i
-                                className="fa-regular fa-chevron-left"></i></button>
-                        <button className="arry-next testimonial__arry-next active ml-10"><i
-                                className="fa-regular fa-chevron-right"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div className="swiper testimonial__slider">
-                <div className="swiper-wrapper pt-10 pb-20">
-                    <div className="swiper-slide">
-                        <div className="testimonial__item shadow">
-                            <svg className="shape" width="59" height="67" viewBox="0 0 59 67" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="59"
-                                    height="67">
-                                    <rect width="59" height="67" fill="#F74F22" />
-                                </mask>
-                                <g mask="url(#mask0_87_43)">
-                                    <circle opacity="0.7" cx="59" cy="9" r="56" fill="#F74F22" />
-                                    <circle cx="59" cy="9" r="47.5" fill="#F74F22" stroke="white"
-                                        stroke-dasharray="2 2" />
-                                </g>
-                            </svg>
-
-                            <div className="top">
-                                <div className="image">
-                                    <img src="images/testimonial/testimonial-image1.png" alt="image"/>
-                                    <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29 28C30.625 28 32 26.625 32 25V10C32 4.4375 27.5 0 22 0H21.5C20.625 0 20 0.625 20 1.5V4.5C20 5.3125 20.625 6 21.5 6H22C24.1875 6 26 7.75 26 10V14H21C19.3125 14 18 15.3125 18 17V25C18 26.625 19.3125 28 21 28H29ZM11 28C12.625 28 14 26.625 14 25V10C14 4.4375 9.5 0 4 0H3.5C2.625 0 2 0.625 2 1.5V4.5C2 5.3125 2.625 6 3.5 6H4C6.1875 6 8 7.75 8 10V14H3C1.3125 14 0 15.3125 0 17V25C0 26.625 1.3125 28 3 28H11Z"
-                                            fill="#F74F22" />
-                                    </svg>
-
-                                </div>
-                                <div className="con">
-                                    <div className="star">
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                    </div>
-                                    <h5>Esther Howard</h5>
-                                    <span>Dog Trainer</span>
-                                </div>
-                            </div>
-                            <p className="mt-30">Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the
-                                laoreet
-                                est, a pretium
-                                metus aliquam eget. Maecenas
-                                porta is nunc ut viverra. Aenean pulvinar maximus leo.</p>
-                        </div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div className="testimonial__item shadow">
-                            <svg className="shape" width="59" height="67" viewBox="0 0 59 67" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="59"
-                                    height="67">
-                                    <rect width="59" height="67" fill="#F74F22" />
-                                </mask>
-                                <g mask="url(#mask0_87_43)">
-                                    <circle opacity="0.7" cx="59" cy="9" r="56" fill="#F74F22" />
-                                    <circle cx="59" cy="9" r="47.5" fill="#F74F22" stroke="white"
-                                        stroke-dasharray="2 2" />
-                                </g>
-                            </svg>
-
-                            <div className="top">
-                                <div className="image">
-                                    <img src="images/testimonial/testimonial-image2.png" alt="image"/>
-                                    <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29 28C30.625 28 32 26.625 32 25V10C32 4.4375 27.5 0 22 0H21.5C20.625 0 20 0.625 20 1.5V4.5C20 5.3125 20.625 6 21.5 6H22C24.1875 6 26 7.75 26 10V14H21C19.3125 14 18 15.3125 18 17V25C18 26.625 19.3125 28 21 28H29ZM11 28C12.625 28 14 26.625 14 25V10C14 4.4375 9.5 0 4 0H3.5C2.625 0 2 0.625 2 1.5V4.5C2 5.3125 2.625 6 3.5 6H4C6.1875 6 8 7.75 8 10V14H3C1.3125 14 0 15.3125 0 17V25C0 26.625 1.3125 28 3 28H11Z"
-                                            fill="#F74F22" />
-                                    </svg>
-
-                                </div>
-                                <div className="con">
-                                    <div className="star">
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                    </div>
-                                    <h5>Annette Black</h5>
-                                    <span>Software Developer</span>
-                                </div>
-                            </div>
-                            <p className="mt-30">Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the
-                                laoreet
-                                est, a pretium
-                                metus aliquam eget. Maecenas
-                                porta is nunc ut viverra. Aenean pulvinar maximus leo.</p>
-                        </div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div className="testimonial__item shadow">
-                            <svg className="shape" width="59" height="67" viewBox="0 0 59 67" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="59"
-                                    height="67">
-                                    <rect width="59" height="67" fill="#F74F22" />
-                                </mask>
-                                <g mask="url(#mask0_87_43)">
-                                    <circle opacity="0.7" cx="59" cy="9" r="56" fill="#F74F22" />
-                                    <circle cx="59" cy="9" r="47.5" fill="#F74F22" stroke="white"
-                                        stroke-dasharray="2 2" />
-                                </g>
-                            </svg>
-
-                            <div className="top">
-                                <div className="image">
-                                    <img src="images/testimonial/testimonial-image3.png" alt="image"/>
-                                    <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29 28C30.625 28 32 26.625 32 25V10C32 4.4375 27.5 0 22 0H21.5C20.625 0 20 0.625 20 1.5V4.5C20 5.3125 20.625 6 21.5 6H22C24.1875 6 26 7.75 26 10V14H21C19.3125 14 18 15.3125 18 17V25C18 26.625 19.3125 28 21 28H29ZM11 28C12.625 28 14 26.625 14 25V10C14 4.4375 9.5 0 4 0H3.5C2.625 0 2 0.625 2 1.5V4.5C2 5.3125 2.625 6 3.5 6H4C6.1875 6 8 7.75 8 10V14H3C1.3125 14 0 15.3125 0 17V25C0 26.625 1.3125 28 3 28H11Z"
-                                            fill="#F74F22" />
-                                    </svg>
-
-                                </div>
-                                <div className="con">
-                                    <div className="star">
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                    </div>
-                                    <h5>Kristin Watson</h5>
-                                    <span>Team Leader</span>
-                                </div>
-                            </div>
-                            <p className="mt-30">Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the
-                                laoreet
-                                est, a pretium
-                                metus aliquam eget. Maecenas
-                                porta is nunc ut viverra. Aenean pulvinar maximus leo.</p>
-                        </div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div className="testimonial__item shadow">
-                            <svg className="shape" width="59" height="67" viewBox="0 0 59 67" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="59"
-                                    height="67">
-                                    <rect width="59" height="67" fill="#F74F22" />
-                                </mask>
-                                <g mask="url(#mask0_87_43)">
-                                    <circle opacity="0.7" cx="59" cy="9" r="56" fill="#F74F22" />
-                                    <circle cx="59" cy="9" r="47.5" fill="#F74F22" stroke="white"
-                                        stroke-dasharray="2 2" />
-                                </g>
-                            </svg>
-
-                            <div className="top">
-                                <div className="image">
-                                    <img src="images/testimonial/testimonial-image4.png" alt="image"/>
-                                    <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29 28C30.625 28 32 26.625 32 25V10C32 4.4375 27.5 0 22 0H21.5C20.625 0 20 0.625 20 1.5V4.5C20 5.3125 20.625 6 21.5 6H22C24.1875 6 26 7.75 26 10V14H21C19.3125 14 18 15.3125 18 17V25C18 26.625 19.3125 28 21 28H29ZM11 28C12.625 28 14 26.625 14 25V10C14 4.4375 9.5 0 4 0H3.5C2.625 0 2 0.625 2 1.5V4.5C2 5.3125 2.625 6 3.5 6H4C6.1875 6 8 7.75 8 10V14H3C1.3125 14 0 15.3125 0 17V25C0 26.625 1.3125 28 3 28H11Z"
-                                            fill="#F74F22" />
-                                    </svg>
-
-                                </div>
-                                <div className="con">
-                                    <div className="star">
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                    </div>
-                                    <h5>Ralph Edwards</h5>
-                                    <span>UI/UX Designer</span>
-                                </div>
-                            </div>
-                            <p className="mt-30">Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the
-                                laoreet
-                                est, a pretium
-                                metus aliquam eget. Maecenas
-                                porta is nunc ut viverra. Aenean pulvinar maximus leo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <TestimonialSlider/>
+       
         {/* <!-- Testimonial area end here --> */}
     </main>
      </>

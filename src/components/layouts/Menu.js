@@ -77,7 +77,7 @@ function Menu(){
                             </li>
                             <li><Link to="/about">About</Link></li>
                             <li>
-                                <a href="#0">Causes</a>
+                                <a  href="#0" className='text-black'>Causes</a>
                                 <ul className="sub-menu">
                                     <li>
                                         <Link to={'/grid'}>Causes Grid</Link>
@@ -128,14 +128,20 @@ function Menu(){
                                 </ul>
                             </li>
                             <li>
-                                <a href="">Blog</a>
+                                <a href="">Resources Center</a>
                                 <ul className="sub-menu">
                                     <li>
-                                        <Link to={'/blog'}>Blog Grid</Link>
+                                        <Link to={'/Project'}>Gallery</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={'/blog'}>Stories of hope</Link>
+                                    </li>
+                                    {/* <li>
+                                        <Link to={'/blog'}>Blog single</Link>
                                     </li>
                                     <li>
                                         <Link to={'/blogsingle'}>Blog single</Link>
-                                    </li>
+                                    </li> */}
                                     {/* <li>
                                         <Link to="blog-single.html">Blog Single</Link>
                                     </li> */}
