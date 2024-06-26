@@ -1,0 +1,9 @@
+.image_box img{
+    width: 100%;
+    height: 100%;
+}
+.arrow{
+    margin-right: 10px;
+    color:#f74f22 !important;
+
+}

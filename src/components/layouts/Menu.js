@@ -77,7 +77,7 @@ function Menu(){
                             </li>
                             <li><Link to="/about">About</Link></li>
                             <li>
-                                <a  href="#0" className='text-black'>Causes</a>
+                                < Link to={'/single'} className='text-black'>What we do</Link>
                                 <ul className="sub-menu">
                                     <li>
                                         <Link to={'/grid'}>Causes Grid</Link>
@@ -134,7 +134,7 @@ function Menu(){
                                         <Link to={'/Project'}>Gallery</Link>
                                     </li>
                                     <li>
-                                        <Link to={'/blog'}>Stories of hope</Link>
+                                        <Link to={'/stories-of-hope'}>Stories of hope</Link>
                                     </li>
                                     {/* <li>
                                         <Link to={'/blog'}>Blog single</Link>
