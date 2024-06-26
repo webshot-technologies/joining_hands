@@ -50,6 +50,9 @@ CSS TABLE OF CONTENTS
   --transition: all 0.4s ease-in-out;
   --shadow: 0px 4px 25px 0px #0000000f;
 }
+.text-primary {
+  color:#f74f22 !important;
+}
 
 * {
   margin: 0;
@@ -1556,7 +1559,7 @@ input {
 }
 
 .image img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .primary-color {
@@ -2915,7 +2918,14 @@ input {
 .banner__inner-page a:hover {
   color: var(--primary-color);
 }
+.banner-two__content h1
+{
+  color: var(--primary-color);
 
+}
+.banner-two_content h4{
+  color: var(--primary-color);
+}
 .section-header h5 {
   color: var(--primary-color);
   padding-bottom: 20px;
@@ -2934,6 +2944,7 @@ input {
   margin-bottom: 15px;
 }
 .service__item {
+  height: 200px;
   display: flex;
   align-items: center;
   gap: 15px;

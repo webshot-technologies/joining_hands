@@ -21,28 +21,7 @@ import Program from './section/Program';
     return(
     <>
            {/* <!-- Sidebar area start here --> */}
-    <div id="targetElement" className="sidebar-area sidebar__hide">
-        <div className="sidebar__overlay"></div>
-        <a href="index.html" className="logo mb-40">
-            <img src="images/logo/logo-light.svg" alt="logo"/>
-        </a>
-        <div className="mobile-menu overflow-hidden"></div>
-        <ul className="info pt-40">
-            <li><i className="fa-solid primary-color fa-location-dot"></i> <a href="#0">example@example.com</a>
-            </li>
-            <li className="py-2"><i className="fa-solid primary-color fa-phone-volume"></i> <a
-                    href="tel:+208-6666-0112">+208-6666-0112</a>
-            </li>
-            <li><i className="fa-solid primary-color fa-paper-plane"></i> <a href="#0">info@example.com</a></li>
-        </ul>
-        <div className="social-icon mt-20">
-            <a href="#0"><i className="fa-brands fa-facebook-f"></i></a>
-            <a href="#0"><i className="fa-brands fa-twitter"></i></a>
-            <a href="#0"><i className="fa-brands fa-linkedin-in"></i></a>
-            <a href="#0"><i className="fa-brands fa-pinterest-p"></i></a>
-        </div>
-        <button id="closeButton" className="text-white"><i className="fa-solid fa-xmark"></i></button>
-    </div>
+   
     {/* <!-- Sidebar area end here --> */}
 
     <main>
@@ -58,19 +37,17 @@ import Program from './section/Program';
         <section className="about-area pt-120 pb-120">
             <div className="container">
                 <div className="row g-2 align-items-center">
-                    <div className="col-lg-6 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div className="about__image">
-                            <div className="dots about-dot__animation">
-                                <img src="images/shape/about-dot.png" alt="dots"/>
-                            </div>
-                            <div className="sm-image">
-                                <img src="images/about/about-image2.png" alt="image"/>
-                            </div>
-                            <div className="image">
-                                <img src="images/about/about-image1.jpg" alt="image"/>
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="about-two__image image pr-60">
+                                <img src="/images/about/about.jpg" alt="image"/>
+                                <div class="line-shape sway_Y__animation">
+                                    <img src="/images/shape/about-line.png" alt="shape"/>
+                                </div>
+                                <div class="dot-shape sway__animation">
+                                    <img src="/images/shape/about-dot3.png" alt="shape"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <div className="col-lg-6">
                             <div className="section-header mb-20">
                                 <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">

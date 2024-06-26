@@ -11,46 +11,52 @@ const TestimonialSection = () => {
 
   const testimonials = [
     {
-      name: "Esther Howard",
-      job: "Dog Trainer",
-      image: "/images/testimonial/testimonial-image1.png",
-      text: "Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the laoreet est, a pretium metus aliquam eget. Maecenas porta is nunc ut viverra. Aenean pulvinar maximus leo."
+      name: "Ashok ",
+      job: " Asst. Manager",
+      image: "/images/testimonial/ashok.jpg",
+      text: '"I used to just lurk around here and there and after joining this course I finally started realising the importance of jobs. Now I just don’t feel like leaving my workplace, I enjoy it to the fullest." – Ashok, works with Banaras ( Pan Parlour) as Asst. Manager. '
     },
     {
-      name: "Esther Howard",
-      job: "Dog Trainer",
-      image: "/images/testimonial/testimonial-image1.png",
-      text: "Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the laoreet est, a pretium metus aliquam eget. Maecenas porta is nunc ut viverra. Aenean pulvinar maximus leo."
+      name: "Laxmi ",
+      job: "Scholarship Programme",
+      image: "/images/testimonial/laxmi.jpg",
+      text: "'This scholarship program has directed me towards my goals and has given me a new life' – Laxmi Haldar, pursuing a BSE program from Institute of Hotel Management, Panipat, supported by Joining Hands Higher Education Scholarship Programme."
     },
     {
-      name: "Esther Howard",
-      job: "Dog Trainer",
-      image: "/images/testimonial/testimonial-image1.png",
-      text: "Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the laoreet est, a pretium metus aliquam eget. Maecenas porta is nunc ut viverra. Aenean pulvinar maximus leo."
+      name: "Niveditha ",
+      job: "Scholarship Programme",
+      image: "/images/testimonial/niveditha.jpg",
+      text: "I am very grateful to Joining Hands for providing me this opportunity to fulfil my dreams. In this scholarship programme you are not only giving financial support, but you are also conducting mentorship programme which provides career guidance sessions and trains us in life skills and soft skills. In the future, if I become a successful person, I will do my bit and will give back to the society - Niveditha, pursuing B. Sc course at BGS Science Academy, Chickballapur, Karnataka, supported by Joining Hands Higher Education Scholarship Programme."
     },
     {
-      name: "Esther Howard",
-      job: "Dog Trainer",
-      image: "/images/testimonial/testimonial-image1.png",
-      text: "Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the laoreet est, a pretium metus aliquam eget. Maecenas porta is nunc ut viverra. Aenean pulvinar maximus leo."
+      name: "Kavya",
+      job: "Competent Software ",
+      image: "/images/testimonial/kavya.jpg",
+      text: "“The Centre has helped build my confidence and attend many interviews. Each teacher has a special connect with the students which has helped me a lot in my studies.” – Kavya, Competent Software "
     },
     {
-      name: "Annette Black",
+      name: "Archana",
       job: "Software Developer",
-      image: "/images/testimonial/testimonial-image2.png",
+      image: "/images/testimonial/archana.jpg",
       text: "Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the laoreet est, a pretium metus aliquam eget. Maecenas porta is nunc ut viverra. Aenean pulvinar maximus leo."
     },
     {
-      name: "Kristin Watson",
-      job: "Team Leader",
-      image: "/images/testimonial/testimonial-image3.png",
-      text: "Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the laoreet est, a pretium metus aliquam eget. Maecenas porta is nunc ut viverra. Aenean pulvinar maximus leo."
+      name: "Roshni",
+      job: " Hospitality Skills Development Programme ",
+      image: "/images/testimonial/roshni.jpg",
+      text: "'Initially, I was not very sure about what I wanted to do in life. My batch mate referred me to the Hospitality course in Joining Hands Training Centre. I gradually started taking interest in the classes. Through this course I actually learnt a lot and got a great exposure. And I must say it was the best decision of my life. I am currently working with Nando’s and I love my job! '- Roshni, trained under the Joining Hands Hospitality Skills Development Programme and presently working with Nando’s, Nehru Place, Delhi."
     },
     {
-      name: "Ralph Edwards",
-      job: "UI/UX Designer",
-      image: "/images/testimonial/testimonial-image4.png",
-      text: "Dolor sit amet consectetur adipiscing elit. Integer nunc viverra the laoreet est, a pretium metus aliquam eget. Maecenas porta is nunc ut viverra. Aenean pulvinar maximus leo."
+      name: "Sukhwinder",
+      job: "Skill Enhancement Programme",
+      image: "/images/testimonial/sukhwinder.jpg",
+      text: "'Before I had no one to guide me or motivate me in my life. Through some friends I g ot to know about Joining Hands and ever since there has been no looking back for me. The trainers and counsellor at the center guided and motivated me in the right path and helped me to overcome my weakness and work on my strength' - Sukhwinder trained under the Joining Hands Skill Enhancement Programme and presently working with Pamac Finance Service Private LTD, Noida."
+    },
+    {
+      name: "Deepak Sahu",
+      job: "Skill Enhancement Programme",
+      image: "/images/testimonial/deepak.jpg",
+      text: "'After joining the course my knowledge on computers improved. Earlier, I used to hesitate to speak in English in front of people, but Joining Hands trained and helped me to develop my spoken English skills. The classes on financial literacy also proved to be very helpful for the profile that I am currently working in.'"
     }
   ];
 
@@ -60,10 +66,10 @@ const TestimonialSection = () => {
         <div className="d-flex align-items-center justify-content-between flex-wrap gap-4 mb-60">
           <div className="section-header">
             <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-            <i class="fa-regular fa-angles-left pe-1"></i> Testimonials <i
+            <i class="fa-regular fa-angles-left pe-1"></i> Stories of Hope<i
                                 class="fa-regular fa-angles-right ps-1"></i>
             </h5>
-            <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Why People Love Us</h2>
+            <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Our Success Stories </h2>
           </div>
           <div className="arry-btn wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
           {/* <button  className="arry-prev testimonial__arry-prev">
@@ -80,7 +86,9 @@ const TestimonialSection = () => {
       <Swiper
         modules={[Navigation, Autoplay]}
         spaceBetween={30}
-        slidesPerView={1}
+        slidesPerView={1.2}
+        centeredSlides={true}
+        loop={true}
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,
@@ -95,11 +103,11 @@ const TestimonialSection = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        loop={true}
         breakpoints={{
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
+          640: { slidesPerView: 1.6 },
+          768: { slidesPerView: 1.2 },
+          1024: { slidesPerView: 1.6 },
+          // 1280: { slidesPerView: 3.5 }
         }}
       >
         {testimonials.map((testimonial, index) => (

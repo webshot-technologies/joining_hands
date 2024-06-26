@@ -16,16 +16,28 @@ import WOW from 'wowjs';
       // Store brand images in an array
      
         const projects = [
-          { image: "/images/project/project-image1.jpg", delay: "00ms", col: "col-md-6", name:"Leslie" },
-          { image: "/images/project/project-image2.jpg", delay: "200ms", col: "col-md-6",name:"Leslie"},
-          { image: "/images/project/project-image-big.jpg", delay: "00ms", col: "col-md-7", name:"Alexander" },
-          { image: "/images/project/project-image-sm.jpg", delay: "200ms", col: "col-md-5", name:"Leslie" },
-          { image: "/images/project/project-image3.jpg", delay: "00ms", col: "col-md-6", name:"Alex" },
-          { image: "/images/project/project-image4.jpg", delay: "200ms", col: "col-md-6",name:"lex" },
+          { image: "/images/project/event-3.jpg", delay: "00ms", col: "col-md-6",  },
+          { image: "/images/project/event-4.jpg", delay: "200ms", col: "col-md-6",},
+          { image: "/images/project/event-5.jpg", delay: "00ms", col: "col-md-7",  },
+          { image: "/images/project/higher-education-2.jpg", delay: "200ms", col: "col-md-5",  },
+          { image: "/images/project/higher-education-3.jpg", delay: "00ms", col: "col-md-6",  },
+          { image: "/images/project/higher-education.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/hospitalaity-1.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/hospitalaity-2.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/hospitalaity-3.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/other-3.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/other-4.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/other-5.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/other-6.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/other-7.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/other-8.jpg", delay: "200ms", col: "col-md-6",name:"lex" },
+          { image: "/images/project/other-9.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/other-14.jpg", delay: "200ms", col: "col-md-6", },
+          { image: "/images/project/training26.jpg", delay: "200ms", col: "col-md-6", },
         ];
       
         const ProjectItem = ({ image, delay, col,name }) => (
-            <div className={`${col} wow fadeInDown`} data-wow-delay={delay} data-wow-duration="1500ms">
+            <div className="col-md-4 wow fadeInDown" data-wow-delay={delay} data-wow-duration="1500ms">
               <div className="project__item">
                 <div className="image">
                   <img src={image} alt="project" />
@@ -33,10 +45,12 @@ import WOW from 'wowjs';
                 <div className="project__content">
                   <div className="con">
                     <h4><a href="project-single.html" className="text-white"> {name}</a></h4>
-                    <span className="text-white">Volunteer</span>
+                    {/* <span className="text-white">Volunteer</span> */}
                   </div>
-                  <a href="project-single.html" class="next-btn"><i
-                                        class="fa-regular fa-arrow-right"></i></a>
+                  {/* <a href="project-single.html" class="next-btn">
+                    <i
+                                        class="fa-regular fa-arrow-right"></i>
+                                        </a> */}
                 </div>
               </div>
             </div>
