@@ -60,7 +60,7 @@ const BannerSlider = () => {
 
   const slides = [
     {
-      image: '/images/banner/slider-1.jpg',
+      image: '/images/banner/banner-1.webp',
       title: 'Support Kids & Elders',
       subtitle: 'Give Generously'
     },

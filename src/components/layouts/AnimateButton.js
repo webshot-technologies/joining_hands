@@ -31,7 +31,7 @@ const AnimatedButton = ({ text, href }) => {
   };
 
   return (
-    <div className="btn-two d-none d-lg-inline-block" ref={buttonRef}>
+    <div className="btn-two d-none d-xl-inline-block" ref={buttonRef}>
       <span 
         className={`btn-circle ${isHovered ? 'explode-circle' : 'desplode-circle'}`}
         style={{

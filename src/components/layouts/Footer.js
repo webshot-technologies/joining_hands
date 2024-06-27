@@ -15,7 +15,7 @@ function Footer(){
             <div className="container">
                 <div className="footer__wrp pt-120 pb-120">
                     <div className="row g-4 justify-content-between">
-                        <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div className="footer__item">
                                 <a href="index.html" className="logo mb-40">
                                     <img src="images/logo/logo-light.svg" alt="image"/>
@@ -34,7 +34,7 @@ function Footer(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div className="footer__item">
                                 <h3 className="title mb-40 text-white">Quick Links</h3>
                                 <ul className="link">
@@ -60,7 +60,7 @@ function Footer(){
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        {/* <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                             <div className="footer__item">
                                 <h3 className="title mb-40 text-white">Latest Post</h3>
                                 <ul className="post">
@@ -87,8 +87,8 @@ function Footer(){
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        </div> */}
+                        <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div className="footer__item">
                                 <h3 className="title mb-40 text-white">Contact Info</h3>
                                 <ul className="link info">

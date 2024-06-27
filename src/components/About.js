@@ -37,7 +37,7 @@ function About(){
             <div className="container">
                 <h2 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">About Us</h2>
                 <div className="breadcrumb-list wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <a href="index.html">Home</a><span><i className="fa-regular fa-angles-right mx-2"></i>About
+                    <a href="index.html">Home</a><span className='text-white'><i className="fa-regular fa-angles-right mx-2"></i>About
                         Us</span>
                 </div>
             </div>
@@ -131,23 +131,15 @@ function About(){
         <section className="team-area pt-120 pb-120 sub-bg">
             <div className="container">
                 <div className="section-header mb-60 text-center">
-                    {/* <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <i className="fa-regular fa-angles-left pe-1"></i> Our Volunteers <i
-                            className="fa-regular fa-angles-right ps-1"></i>
-                    </h5> */}
+                    
                     <h2 className="wow fadeInUp " data-wow-delay="200ms" data-wow-duration="1500ms">Board of Trustees</h2>
                 </div>
                 <div className="row g-4">
                     <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div className="team__item image">
-                            <img src="images/team/team-image1.jpg" alt="image"/>
+                            <img  src="images/team/board-1.jpg" alt="image"/>
                             <div className="team__content">
-                                {/* <div className="social-icon mb-30">
-                                    <a href="#0"><i className="fa-brands fa-facebook-f"></i></a>
-                                    <a className="active" href="#0"><i className="fa-brands fa-instagram"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-pinterest-p"></i></a>
-                                </div> */}
+                              
                                 <div className="content">
                                     <h4><a href="team-single.html" className="primary-hover">Mr. Ardeshir B K Dubash</a></h4>
                                     <span>Chairman</span>
@@ -157,17 +149,12 @@ function About(){
                     </div>
                     <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div className="team__item image">
-                            <img src="images/team/team-image2.jpg" alt="image"/>
+                            <img src="images/team/board-2.jpg" alt="image"/>
                             <div className="team__content">
-                                {/* <div className="social-icon mb-30">
-                                    <a href="#0"><i className="fa-brands fa-facebook-f"></i></a>
-                                    <a className="active" href="#0"><i className="fa-brands fa-instagram"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-pinterest-p"></i></a>
-                                </div> */}
+                                
                                 <div className="content">
                                     <h4><a href="team-single.html" className="primary-hover">Mr. Rajendra Arora
- </a></h4>
+                                   </a></h4>
                                     {/* <h4><a href="team-single.html" className="primary-hover">
                                     Mr. Sharang Shah </a></h4> */}
                                     <span>Trustee</span>
@@ -177,14 +164,9 @@ function About(){
                     </div>
                     <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                         <div className="team__item image">
-                            <img src="images/team/team-image3.jpg" alt="image"/>
+                            <img src="images/team/board-3.jpg" alt="image"/>
                             <div className="team__content">
-                                {/* <div className="social-icon mb-30">
-                                    <a href="#0"><i className="fa-brands fa-facebook-f"></i></a>
-                                    <a className="active" href="#0"><i className="fa-brands fa-instagram"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-pinterest-p"></i></a>
-                                </div> */}
+                               
                                 <div className="content">
                                     <h4><a href="team-single.html" className="primary-hover">Ms. Kavita Shah</a></h4>
                                     <span>Advisor</span>

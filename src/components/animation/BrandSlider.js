@@ -6,16 +6,17 @@ import 'swiper/css/autoplay';
 
 const BrandSlider = () => {
   const brands = [
-    { id: 1, image: "images/brand/brand-image1.png" },
-    { id: 2, image: "images/brand/brand-image2.png" },
-    { id: 3, image: "images/brand/brand-image3.png" },
-    { id: 4, image: "images/brand/brand-image4.png" },
-    { id: 5, image: "images/brand/brand-image5.png" },
-    { id: 6, image: "images/brand/brand-image5.png" },
-    { id: 7, image: "images/brand/brand-image5.png" },
-    { id: 8, image: "images/brand/brand-image5.png" },
-    { id: 9, image: "images/brand/brand-image5.png" },
-    { id: 10, image: "images/brand/brand-image5.png" },
+    { id: 1, image: "images/brand/meridien.jpg" },
+    { id: 2, image: "images/brand/oxigen.jpg" },
+    { id: 3, image: "images/brand/tripoto.jpg" },
+    { id: 4, image: "images/brand/truly-modly.jpg" },
+    { id: 5, image: "images/brand/volvoline.jpg" },
+    { id: 1, image: "images/brand/meridien.jpg" },
+    { id: 2, image: "images/brand/oxigen.jpg" },
+    { id: 3, image: "images/brand/tripoto.jpg" },
+    { id: 4, image: "images/brand/truly-modly.jpg" },
+    { id: 5, image: "images/brand/volvoline.jpg" },
+   
   ];
 
   return (
@@ -28,7 +29,7 @@ const BrandSlider = () => {
           slidesPerView={2}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 1500,
             disableOnInteraction: false,
           }}
           breakpoints={{

@@ -30,7 +30,10 @@ import Program from './section/Program';
 
         {/* <!-- Banner area end here -->/ */}
         {/* <!-- Service area start here --> */}
+        <section className="service-area pt-100 pb-100 sub-bg">
+        
         <Program/>
+        </section>
         {/* <!-- Service area end here --> */}
 
         {/* <!-- About area start here --> */}
@@ -105,7 +108,7 @@ import Program from './section/Program';
         {/* <!-- About area end here --> */}
 
         {/* <!-- Video area start here --> */}
-        <section className="video-area">
+        {/* <section className="video-area">
             <div className="row g-0">
                 <div className="col-md-5">
                     <div className="video__left-item bg-image h-100"  style={{ backgroundImage: "url('/images/video/video-left-image.jpg')"}} 
@@ -154,7 +157,7 @@ import Program from './section/Program';
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         {/* <!-- Video area end here --> */}
 
         {/* <!-- Cause area start here --> */}
@@ -165,104 +168,32 @@ import Program from './section/Program';
                         <i className="fa-regular fa-angles-left pe-1"></i> Features CAUSES <i
                             className="fa-regular fa-angles-right ps-1"></i>
                     </h5>
-                    <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Introducing Our Campaigns
-                    </h2>
+                    <h3 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">COVID 19 vaccination drive undertaken for the beneficiaries in May 2021 
+                    </h3>
                 </div>
                 <div className="row g-4">
                     <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div className="cause__item">
                             <div className="cause__image image">
-                                <img src="/images/cause/cause-image2.jpg" alt="image"/>
-                                <span className="cause-tag">Foods</span>
+                                <img src="/images/cause/cause-1.jpg" alt="image"/>
                             </div>
-                            <div className="cause__content">
-                                <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Charity
-                                        Showcases a
-                                        Nation's Kindness</a></h4>
-                                <div className="progress-area">
-                                    <div className="progress__item">
-                                        <div className="progress__content" style={{width: "70%"}}><span>70%</span></div>
-                                    </div>
-                                    <div className="progress__goal mt-15">
-                                        <h6>Goal : <span>$40.000</span></h6>
-                                        <h6>Raised : <span>$30.000</span></h6>
-                                    </div>
-                                    <div className="btn-three mt-30">
-                                        <span className="btn-circle">
-                                        </span>
-                                        <a href="cause-single.html" className="btn-inner">
-                                            <span className="btn-text">
-                                                DONATE NOW
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                     <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div className="cause__item">
                             <div className="cause__image image">
-                                <img src="/images/cause/cause-image3.jpg" alt="image"/>
-                                <span className="cause-tag">Medical</span>
+                                <img src="/images/cause/cause-2.jpg" alt="image"/>
                             </div>
-                            <div className="cause__content">
-                                <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Construct
-                                        Dwellings
-                                        African Impoverished Women
-                                    </a></h4>
-                                <div className="progress-area">
-                                    <div className="progress__item">
-                                        <div className="progress__content" style={{width: "90%"}}><span>90%</span></div>
-                                    </div>
-                                    <div className="progress__goal mt-15">
-                                        <h6>Goal : <span>$40.000</span></h6>
-                                        <h6>Raised : <span>$35.000</span></h6>
-                                    </div>
-                                    <div className="btn-three mt-30">
-                                        <span className="btn-circle">
-                                        </span>
-                                        <a href="cause-single.html" className="btn-inner">
-                                            <span className="btn-text">
-                                                DONATE NOW
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                     <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                         <div className="cause__item">
                             <div className="cause__image image">
-                                <img src="/images/cause/cause-image1.jpg" alt="image"/>
-                                <span className="cause-tag">Education</span>
+                                <img src="/images/cause/cause-3.jpg" alt="image"/>
                             </div>
-                            <div className="cause__content">
-                                <h4 className="mb-4 mt-20"><a href="cause-single.html" className="primary-hover">Rebecca's New
-                                        Album Aid
-                                        for
-                                        the
-                                        Needy</a></h4>
-                                <div className="progress-area">
-                                    <div className="progress__item">
-                                        <div className="progress__content" style={{width: "50%"}}><span>50%</span></div>
-                                    </div>
-                                    <div className="progress__goal mt-15">
-                                        <h6>Goal : <span>$40.000</span></h6>
-                                        <h6>Raised : <span>$20.000</span></h6>
-                                    </div>
-                                    <div className="btn-three mt-30">
-                                        <span className="btn-circle">
-                                        </span>
-                                        <a href="cause-single.html" className="btn-inner">
-                                            <span className="btn-text">
-                                                DONATE NOW
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -274,61 +205,45 @@ import Program from './section/Program';
         <section className="team-area pt-120 pb-120 sub-bg">
             <div className="container">
                 <div className="section-header mb-60 text-center">
-                    <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <i className="fa-regular fa-angles-left pe-1"></i> Our Volunteers <i
-                            className="fa-regular fa-angles-right ps-1"></i>
-                    </h5>
-                    <h2 className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Volunteers Our Precious
-                        Assets</h2>
+                    
+                    <h2 className="wow fadeInUp " data-wow-delay="200ms" data-wow-duration="1500ms">Board of Trustees</h2>
                 </div>
                 <div className="row g-4">
                     <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div className="team__item image">
-                            <img src="images/team/team-image1.jpg" alt="image"/>
+                            <img  src="images/team/board-1.jpg" alt="image"/>
                             <div className="team__content">
-                                <div className="social-icon mb-30">
-                                    <a href="#0"><i className="fa-brands fa-facebook-f"></i></a>
-                                    <a className="active" href="#0"><i className="fa-brands fa-instagram"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-pinterest-p"></i></a>
-                                </div>
+                              
                                 <div className="content">
-                                    <h4><a href="team-single.html" className="primary-hover">Kristin Watson</a></h4>
-                                    <span>Volunteer</span>
+                                    <h4><a href="team-single.html" className="primary-hover">Mr. Ardeshir B K Dubash</a></h4>
+                                    <span>Chairman</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div className="team__item image">
-                            <img src="images/team/team-image2.jpg" alt="image"/>
+                            <img src="images/team/board-2.jpg" alt="image"/>
                             <div className="team__content">
-                                <div className="social-icon mb-30">
-                                    <a href="#0"><i className="fa-brands fa-facebook-f"></i></a>
-                                    <a className="active" href="#0"><i className="fa-brands fa-instagram"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-pinterest-p"></i></a>
-                                </div>
+                                
                                 <div className="content">
-                                    <h4><a href="team-single.html" className="primary-hover">Ralph Edwards</a></h4>
-                                    <span>Volunteer</span>
+                                    <h4><a href="team-single.html" className="primary-hover">Mr. Rajendra Arora
+                                   </a></h4>
+                                    {/* <h4><a href="team-single.html" className="primary-hover">
+                                    Mr. Sharang Shah </a></h4> */}
+                                    <span>Trustee</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                         <div className="team__item image">
-                            <img src="images/team/team-image3.jpg" alt="image"/>
+                            <img src="images/team/board-3.jpg" alt="image"/>
                             <div className="team__content">
-                                <div className="social-icon mb-30">
-                                    <a href="#0"><i className="fa-brands fa-facebook-f"></i></a>
-                                    <a className="active" href="#0"><i className="fa-brands fa-instagram"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#0"><i className="fa-brands fa-pinterest-p"></i></a>
-                                </div>
+                               
                                 <div className="content">
-                                    <h4><a href="team-single.html" className="primary-hover">Leslie Alexander</a></h4>
-                                    <span>Volunteer</span>
+                                    <h4><a href="team-single.html" className="primary-hover">Ms. Kavita Shah</a></h4>
+                                    <span>Advisor</span>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +254,7 @@ import Program from './section/Program';
         {/* <!-- Team area end here --> */}
 
         {/* <!-- Event area start here --> */}
-        <section className="event-area pt-120 pb-120 bg-image" style={{backgroundImage: "url('/images/bg/event-bg-image.jpg')"}} >
+        <section className="event-area pt-120 pb-120 bg-image" style={{backgroundImage: "url('/images/bg/bg-2.jpg')"}} >
             <div className="container-fluid">
                 <div className="section-header text-center mb-60">
                     <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">

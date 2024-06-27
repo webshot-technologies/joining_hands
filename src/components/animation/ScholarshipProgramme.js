@@ -92,15 +92,15 @@ This initiative will be carried in five phases to have more effectiveness.
         breakpoints={{
           640: { slidesPerView: 1.6 },
           768: { slidesPerView: 1.2 },
-          1024: { slidesPerView: 3.2 },
+          1024: { slidesPerView: 2.5 },
           // 1280: { slidesPerView: 3.5 }
         }}
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
             <div className="testimonial__item ">
-                <div className='image_box'>
-                    <img style={{width: "100%", height:"100%"}} src={testimonial.image} alt={testimonial.name}/>
+                <div className='image_box '>
+                    <img style={{width: "100%", height:"100%"}} className='border border-2' src={testimonial.image} alt={testimonial.name}/>
                 </div>
             
               
