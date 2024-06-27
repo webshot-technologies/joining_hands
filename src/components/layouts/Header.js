@@ -53,9 +53,9 @@ function Header(){
             </div>
         </div>
     </div>
-        <header className="header-area">
+        <header className="header-area ">
         <div className="container">
-            <div className="header__main">
+            <div className="header__main ">
                 <Link to={'/'} className="logo">
                     <img src="/images/logo/logo.png" alt="logo"/>
                 </Link>
@@ -82,7 +82,39 @@ function Header(){
         <a href="index.html" className="logo mb-40">
             <img src="images/logo/logo-light.svg" alt="logo"/>
         </a>
-        <div className="mobile-menu overflow-hidden"></div>
+        <div className="mobile-menu overflow-hidden">
+
+        <nav>
+                        <ul>
+                            <li className="has-megamenu">
+                                <Link to={'/'}>Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/about">About</Link></li>
+                            <li>
+                                < Link to={'/single'}>What we do</Link>
+                            </li>
+                           
+                            <li>
+                                <Link to={'/volunteerSingle'}>What You Can Do</Link>
+                            </li>
+                            <li>
+                                <Link to={''}>Resources Center</Link>
+                                <ul className="sub-menu">
+                                    <li>
+                                        <Link to={'/Project'}>Gallery</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={'/stories-of-hope'}>Stories of hope</Link>
+                                    </li>                                
+                                </ul>
+                            </li>
+                            <li>
+                                <Link to={'/contact'}>Contact</Link>
+                            </li>
+                        </ul>
+                    </nav>
+        </div>
         <ul className="info pt-40">
             <li><i className="fa-solid primary-color fa-location-dot"></i> <a href="#0">example@example.com</a>
             </li>

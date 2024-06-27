@@ -112,7 +112,7 @@ const TestimonialSection = () => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className="testimonial__item">
+            <div className="testimonial__item " style={{minHeight: "350px"}}>
               <svg className="shape" width="59" height="67" viewBox="0 0 59 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="59" height="67">
                   <rect width="59" height="67" fill="#F74F22"/>

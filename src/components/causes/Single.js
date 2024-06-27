@@ -65,7 +65,7 @@ export const Single = () => {
               data-wow-duration="1500ms"
             >
               <a href="index.html">Home</a>
-              <span>
+              <span  className='text-white'>
                 <i class="fa-regular fa-angles-right mx-2"></i>What We Do Single
               </span>
             </div>
@@ -79,15 +79,19 @@ export const Single = () => {
             <div class="row g-4">
               <div class="col-lg-12 order-2 order-lg-1">
                 <div class="blog__item blog-single__left-item shadow-none">
-                  <div class="progress-area px-4 pb-4 pt-10 ">
+                  <div class="progress-area px-4 pb-4 pt-10  ">
                     <h2 className="text-center fw-bold">What We Do </h2>
                   </div>
-                  <div class="blog__content p-0">
-                    <h4 class="mt-20 mb-20  py-5 fs-30 fw-bold text-center">
+                  <div class="blog__content p-0 mt-20 ">
+                    {/* <h4 class="mt-20 mb-20  py-5 fs-30 fw-bold text-center">
                       Enhancing Employability
-                    </h4>
+                    </h4> */}
                     <div className="row align-items-center ">
                       <div className="col-md-7 ">
+                       <h4 class="mt-20   fs-30 fw-bold ">
+                      Enhancing Employability
+                    </h4>
+                    <div className=" pr-30" >
                         <p class=" mb-2 mt-20  fw-500 text-justify">
                         With a focus on overall development, Joining Hands initiated a three months intensive training programme in the Badarpur area of New Delhi, where the youth is trained in basic skills such as computer literacy, English, life and soft skills. 
                         </p>
@@ -97,24 +101,26 @@ export const Single = () => {
                         <p class="mb-2  fw-500 text-justify">
                         With an average income of Rs. 10000 a month, they have become important contributors in their families both socially and financially. Some of them have also contributed towards the education of their siblings.
                         </p>
-                       
+                        </div>
                       </div>
-                      <div className="col-md-5 image_box border border-2">
+                      <div className="col-md-5 image_box ">
                         <img src="/images/blog/enhance-employ.jpg" alt="" />
                         {/* <span className="blog-tag">{tag}</span> */}
                       </div>
                     </div>
                   </div>
                   <div class="blog__content p-0">
-                    <h4 class="mt-20 mb-20  py-5 fs-30 fw-semibold">
+                   
+                    <div className="row align-items-center ">
+                    <h4 class="mt-20  py-5 fs-30 fw-bold">
                       Skill Enhancement Programme
                     </h4>
-                    <div className="row align-items-center ">
                       <div className="col-md-5 image_box ">
                         <img src="/images/blog/skill-enhencement.jpg" alt="" />
                         {/* <span className="blog-tag">{tag}</span> */}
                       </div>
                       <div className="col-md-7  ">
+                        <div className="pl-30">
                         <p class=" mb-2 mt-20  fw-500 text-justify">
                           According to the 2011 census Sixty-five percentages of
                           India’s 1.2 billion people are below the age of 35 and
@@ -141,6 +147,7 @@ export const Single = () => {
                           to enhance skills of the less privileged youth and to
                           make them employable in the organised sector.
                         </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -166,18 +173,20 @@ export const Single = () => {
                   </div>
 
                   <div class="blog__content p-0 mt-10">
-                    <h4 class="mt-20 mb-20  py-5 fs-30 fw-bold text-center">
-                    Higher Education Scholarship Programme 
-                    </h4>
+                   
                     <div className="row align-items-center ">
                       <div className="col-md-7 ">
+                      <h4 class=" py-3 fs-30 fw-bold ">
+                    Higher Education Scholarship Programme 
+                    </h4>
+                    <div className="pr-30">
                         <p class=" mb-2 mt-20  fw-500 text-justify">
                         While reaching out to the youth for the Skill Enhancement programme, Joining Hands came across the challenges faced by meritorious less-privileged students who are keen on pursuing higher education but do not have the financial resources to do so. 
                         </p>
                         <p class="mb-2  fw-500 text-justify">
                         oining Hands expanded its outreach by initiating the Higher Education Scholarship Programme in association with Cadence Design Systems IPL. This programme facilitates the higher education of less privileged students by sponsoring their fees and other related expenses for professional courses like engineering, medical, hotel management etc. 
                         </p>
-                       
+                        </div>
                        
                       </div>
                       <div className="col-md-5 image_box border border-2">
@@ -190,11 +199,13 @@ export const Single = () => {
                   <ScholarshipProgramme/>
                   </div>
                   <div class="blog__content p-0 mt-10 ">
-                    <h4 class="mt-20 mb-20  py-5 fs-30 fw-bold text-center">
-                    Others
-                    </h4>
+                    
                     <div className="row align-items-center ">
                       <div className="col-md-7  ">
+                      <h4 class=" py-3 fs-30 fw-bold ">
+                    Others
+                    </h4>
+                    <div className="pr-30">
                         <p class=" mb-2 mt-20  fw-500 text-justify">
                             
                         We organize various events and workshops for school going children and youth with the purpose of fostering sensitivity and creating social consciousness amongst them. 
@@ -211,7 +222,7 @@ export const Single = () => {
                         <span className="arrow"><i class="fa fa-angle-double-right"></i></span>
                             Workshops & Training : We engage in conducting capacity building workshops and training for various stakeholders in the society on various social issues such as Sexual Harassment of Women at workplace (SHAWP), Protection of Children from Sexual Offenses Act (POCSO) and Gender Sensitization, NGO Accounting & Reporting, Aligning CSR & NGOs strategy, Relation between People Management & Project Cycle,NGO legal Framework & Requirements.  
                         </p>
-                       
+                        </div>
                        
                       </div>
                       <div className="col-md-5 image_box border border-2">
