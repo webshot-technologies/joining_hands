@@ -22,7 +22,7 @@ function Header(){
                                 fill="white" />
                         </svg>
 
-                        <a href="#0" className="ms-1">info@example.com</a>
+                        <a href="#0" className="ms-1">info@joininghandsindia.org</a>
                     </li>
                     <li className="ms-4"><svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ function Header(){
                             </defs>
                         </svg>
 
-                        <a href="#0" className="ms-1 ">+208-6666-0112</a>
+                        <a href="#0" className="ms-1 "> +91 11 46562485</a>
                     </li>
                 </ul>
                 <ul className="link-info">
