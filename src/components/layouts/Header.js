@@ -119,7 +119,7 @@ function Header(){
                                 
                             </li>
                             <li>
-                                <Link  id="closeButton"  to="/about">About</Link></li>
+                                <Link  id="closeButton"  to={"/about"}>About</Link></li>
                             <li>
                                 < Link  id="closeButton"  to={'/single'}>What we do</Link>
                             </li>

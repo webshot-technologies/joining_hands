@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Footer(){
@@ -37,23 +38,25 @@ function Footer(){
                                 <h3 className="title mb-40 text-white">Quick Links</h3>
                                 <ul className="link">
                                     <li className="mb-3">
-                                        <a href="about.html"><i className="fa-light fa-angles-right me-2"></i> About Us</a>
+                                        <Link to={'about'}><i className="fa-light fa-angles-right me-2"></i> About Us</Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="cause.html"><i className="fa-light fa-angles-right me-2"></i> Our
-                                            Causes</a>
+                                        <Link to={'/single'}><i className="fa-light fa-angles-right me-2"></i> What We Do
+                                            </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="event.html"><i className="fa-light fa-angles-right me-2"></i> Upcoming
-                                            Event</a>
+                                        <Link to={"/volunteerSingle"}><i className="fa-light fa-angles-right me-2"></i> What You Can Do</Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="blog.html"><i className="fa-light fa-angles-right me-2"></i> Latest
-                                            Blog</a>
+                                        <Link to={"/Project"}><i className="fa-light fa-angles-right me-2"></i> Gallery</Link>
+                                    </li>
+                                    <li className='mb-3'>
+                                        <Link to={"/stories-of-hope"}><i className="fa-light fa-angles-right me-2"></i> Stories of hope
+                                            </Link>
                                     </li>
                                     <li>
-                                        <a href="contact.html"><i className="fa-light fa-angles-right me-2"></i> Contact
-                                            Us</a>
+                                        <Link to={"/contact"}><i className="fa-light fa-angles-right me-2"></i>Contact
+                                            Us</Link>
                                     </li>
                                 </ul>
                             </div>
