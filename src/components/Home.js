@@ -254,7 +254,7 @@ import Program from './section/Program';
         {/* <!-- Team area end here --> */}
 
         {/* <!-- Event area start here --> */}
-        <section className="event-area pt-120 pb-120 bg-image" style={{backgroundImage: "url('/images/bg/bg-2.jpg')"}} >
+        {/* <section className="event-area pt-120 pb-120 bg-image" style={{backgroundImage: "url('/images/bg/bg-2.jpg')"}} >
             <div className="container-fluid">
                 <div className="section-header text-center mb-60">
                     <h5 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
@@ -533,7 +533,7 @@ import Program from './section/Program';
 
                 </div>
             </div>
-        </section>
+        </section> */}
         {/* <!-- Event area end here --> */}
              {/* mission area start area  */}
              <section className="counter-area pt-100 pb-100">

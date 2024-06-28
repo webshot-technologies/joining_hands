@@ -71,10 +71,21 @@ const Blog = () => {
     <main>
       <section 
         className="banner__inner-page bg-image pt-160 pb-160 " 
-        style={{backgroundImage: "url('/images/banner/story-of-hope.jpg')"}}
+        style={{backgroundImage: "url('/images/banner/story-of-hope.jpg')",position:"relative"}}
       >
-        <div className="container">
-          <h2 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">stories-of-hope</h2>
+           <div 
+    className="overlay" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(1, 0, 0, 0.5)'
+    }}
+  ></div>
+        <div className="container overlay_content" >
+          <h2 className="wow fadeInUp " data-wow-delay="00ms" data-wow-duration="1500ms">stories-of-hope</h2>
           <div className="breadcrumb-list wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
             <Link to='/'>Home</Link>
             <span className='text-white'><i className="fa-regular fa-angles-right mx-2"></i>stories-of-hope</span>
