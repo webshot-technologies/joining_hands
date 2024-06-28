@@ -62,9 +62,20 @@ import WOW from 'wowjs';
      
     <main>
         {/* <!-- Page banner area start here --> */}
-        <section className="banner__inner-page bg-image pt-160 pb-160 bg-image" style={{backgroundImage:"url('/images/banner/gallery.jpg')"}}
+        <section className="banner__inner-page bg-image pt-160 pb-160 bg-image" style={{backgroundImage:"url('/images/banner/gallery.jpg')", position:"relative"}}
           >
-            <div className="container">
+               <div 
+    className="overlay" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(1, 0, 0, 0.5)'
+    }}
+  ></div>
+            <div className="container overlay_content">
                 <h2 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Gallery</h2>
                 <div className="breadcrumb-list wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <Link to={'/'}>Home</Link><span><i className="fa-regular fa-angles-right mx-2"></i>Gallery</span>

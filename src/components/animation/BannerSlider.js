@@ -4,6 +4,7 @@ import { Navigation, EffectFade, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
+import AnimatedButton from '../layouts/AnimateButton';
 
 const BannerSlider = () => {
   const swiperRef = useRef(null);
@@ -87,20 +88,28 @@ const BannerSlider = () => {
         <div className="swiper-wrapper">
           {slides.map((slide, index) => (
             <div className="swiper-slide" key={index}>
-              <div className="slide-bg" style={{backgroundImage: `url('${slide.image}')`}}></div>
-              <div className="container">
+              <div className="slide-bg bg-black" style={{backgroundImage: `url('${slide.image}')`}}></div>
+              <div 
+    className="overlay" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(1, 0, 0, 0.5)'
+    }}
+  ></div>
+                <div className="container overlay_content">
                 <div className="banner-two__content">
                   <h4 className="" data-animation="fadeInUp" data-delay=".3s">Change The World Together</h4>
-                  <h1 data-animation="fadeInUp" data-delay=".5s">{slide.title} <br /> {slide.subtitle}</h1>
-                  <div className="btn-one mt-50" data-animation="fadeInUp" data-delay="1s">
-                    <span className="btn-circle"></span>
-                    <a href="cause-single.html" className="btn-inner">
-                      <span className="btn-text">DONATE NOW</span>
-                    </a>
-                  </div>
+                  <h1 className='mb-3' data-animation="fadeInUp" data-delay=".5s">{slide.title} <br /> {slide.subtitle}</h1>
+                 
+                  <AnimatedButton/>
+
                 </div>
+               </div>
               </div>
-            </div>
           ))}
         </div>
       </div>

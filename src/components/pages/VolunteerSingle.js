@@ -11,9 +11,20 @@ export const VolunteerSingle = () => {
 
     <main>
         {/* <!-- Page banner area start here --> */}
-        <section className="banner__inner-page bg-image pt-160 pb-160 bg-image" style={{backgroundImage: "url('/images/banner/what-we-do-baners.jpg')"}}
+        <section className="banner__inner-page bg-image pt-160 pb-160 bg-image" style={{backgroundImage: "url('/images/banner/what-we-do-baners.jpg')", position:"relative"}}
           >
-            <div className="container">
+               <div 
+    className="overlay" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(1, 0, 0, 0.5)'
+    }}
+  ></div>
+            <div className="container overlay_content">
                 <h2 className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">What We Can Do</h2>
                 <div className="breadcrumb-list wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <a href="index.html">Home</a><span className='text-white'><i className="fa-regular fa-angles-right mx-2"></i>What We Can Do</span>

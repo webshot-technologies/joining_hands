@@ -18,11 +18,9 @@ function Footer(){
                         <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div className="footer__item">
                                 <a href="index.html" className="logo mb-40">
-                                    <img src="images/logo/logo-light.svg" alt="image"/>
+                                    <img src="/images/logo/logo.png" alt="image"/>
                                 </a>
-                                <p className="text-white">Phasellus ultricies aliquam volutpat
-                                    ullamcorper laoreet neque, a lacinia
-                                    curabitur lacinia mollis</p>
+                                <p className="text-white">To socially and economically empower the youth who act as agents of change in creating a more equitable world.</p>
                                 <div className="btn-one mt-40">
                                     <span className="btn-circle">
                                     </span>
@@ -95,17 +93,14 @@ function Footer(){
                                     <li className="mb-3">
                                         <a href="tel:+8555-2546-2566"><i
                                                 className="fa-solid fa-phone me-1 primary-color"></i>
-                                            +8
-                                            555-2546-2566</a>
+                                            +91 11 46562485</a>
                                     </li>
                                     <li className="mb-3">
                                         <a href="#0"><i className="fa-sharp fa-solid fa-envelope me-1 primary-color"></i>
-                                            info@example.com</a>
+                                            info@joininghandsindia.org</a>
                                     </li>
                                     <li>
-                                        <a href="#0"><i className="fa-solid fa-location-dot me-1 primary-color"></i> 3891
-                                            Ranchview California
-                                            62639</a>
+                                        <a href="#0"><i className="fa-solid fa-location-dot me-1 primary-color"></i>A-38, 1st floor, Lajpat Nagar IV, Block A, Amar Colony, Lajpat Nagar, New Delhi 110024</a>
                                     </li>
                                 </ul>
                                 <div className="social-icon mt-30">

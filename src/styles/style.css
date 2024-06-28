@@ -3924,3 +3924,7 @@ input {
 .footer__copytext p {
   color: var(--white);
 }
+.overlay_content{
+  position: relative;
+  z-index: 5;
+}

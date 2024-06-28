@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect,useState}from 'react';
 import Menu from './Menu';
 import AnimateButton from './AnimateButton';
 import { Link } from 'react-router-dom';
@@ -8,6 +8,33 @@ import { Link } from 'react-router-dom';
 
 
 function Header(){
+
+    const [isFixed, setIsFixed] = useState(false);
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleExpand = (e) => {
+        e.preventDefault();
+        setIsExpanded(!isExpanded);
+    };
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup function
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return(
 
         <>
@@ -22,7 +49,7 @@ function Header(){
                                 fill="white" />
                         </svg>
 
-                        <a href="#0" className="ms-1">info@example.com</a>
+                        <a href="#0" className="ms-1">info@joininghandsindia.org</a>
                     </li>
                     <li className="ms-4"><svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +68,7 @@ function Header(){
                             </defs>
                         </svg>
 
-                        <a href="#0" className="ms-1 ">+208-6666-0112</a>
+                        <a href="#0" className="ms-1 "> +91 11 46562485</a>
                     </li>
                 </ul>
                 <ul className="link-info">
@@ -53,7 +80,7 @@ function Header(){
             </div>
         </div>
     </div>
-        <header className="header-area ">
+        <header className={`header-area animated ${isFixed ? 'menu-fixed animated fadeInDown' : ''}`}>
         <div className="container">
             <div className="header__main ">
                 <Link to={'/'} className="logo">
@@ -79,41 +106,50 @@ function Header(){
     </header>
      <div id="targetElement" className="sidebar-area sidebar__hide">
         <div className="sidebar__overlay"></div>
-        <a href="index.html" className="logo mb-40">
-            <img src="images/logo/logo-light.svg" alt="logo"/>
-        </a>
-        <div className="mobile-menu overflow-hidden">
+           <a href="index.html" className="logo mb-40">
+            <img src="/images/logo/logo.png" alt="logo"/>
+           </a>
+        <div className="mobile-menu overflow-hidden mean-container">
+            <div className="mean-bar">
 
-        <nav>
+                   <nav className="mean-nav">
                         <ul>
                             <li className="has-megamenu">
-                                <Link to={'/'}>Home</Link>
+                                <Link  id="closeButton"  to={'/'}>Home</Link>
+                                
                             </li>
                             <li>
-                                <Link to="/about">About</Link></li>
+                                <Link  id="closeButton"  to="/about">About</Link></li>
                             <li>
-                                < Link to={'/single'}>What we do</Link>
+                                < Link  id="closeButton"  to={'/single'}>What we do</Link>
                             </li>
                            
                             <li>
-                                <Link to={'/volunteerSingle'}>What You Can Do</Link>
+                                <Link  id="closeButton"  to={'/volunteerSingle'}>What You Can Do</Link>
                             </li>
                             <li>
-                                <Link to={''}>Resources Center</Link>
-                                <ul className="sub-menu">
+                                <Link   id="closeButton" to={''}>Resources Center</Link>
+                                <a className='mean-expand' href='#' onClick={toggleExpand}>
+                                {isExpanded ? '-' : '+'}
+                                    </a>
+                                <ul className="sub-menu " style={{ display: isExpanded ? 'block' : 'none' }}>
                                     <li>
-                                        <Link to={'/Project'}>Gallery</Link>
+                                        <Link   id="closeButton"  to={'/Project'}>Gallery</Link>
                                     </li>
                                     <li>
-                                        <Link to={'/stories-of-hope'}>Stories of hope</Link>
+                                        <Link    id="closeButton"  to={'/stories-of-hope'}>Stories of hope</Link>
                                     </li>                                
                                 </ul>
                             </li>
                             <li>
-                                <Link to={'/contact'}>Contact</Link>
+                                <Link id="closeButton" to={'/contact'}>Contact</Link>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> 
+
+            </div>
+
+       
         </div>
         <ul className="info pt-40">
             <li><i className="fa-solid primary-color fa-location-dot"></i> <a href="#0">example@example.com</a>
